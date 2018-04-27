@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>WebFG</title>
+</head>
+
+<body>
+  <h1>Web Fusée Launcher</h1>
+  <p>Fusee Launcher ported to JavaScript using WebUSB.</p>
+  <p>
+    Source can be found on <a href="https://github.com/atlas44/web-fusee-launcher">GitHub</a> (or by hitting view source, there is no backend!).
+    Ported from <a href="https://github.com/reswitched/fusee-launcher">fusee-launcher</a>.
+    Thanks to ktemkin and ReSwitched for Fusée Gelée and a ton of other things!
+  </p>
+
+  <p>
+    <h4>Instructions:</h4>
+    <ol>
+      <li>Put the Switch in RCM, and connect it to your device.</li>
+      <li>Select either the example payload, or upload one.</li>
+      <li>Press 'Do the thing!'</li>
+      <li>On the consent screen that appears, select 'APX' and hit confirm.</li>
+      <li>If all goes well, the payload will launch!</li>
+    </ol>
+  </p>
+
+  <p>
+    <h4>Random stuff:</h4>
+    <ul>
+      <li>This is pretty poorly tested. I just kind wrote it and whatever. I'm not responsible if anything goes wrong!</li>
+      <li>This does NOT work on Windows due to a limitation in the Chrome implementation of WebUSB (and probably other reasons!)</li>
+      <li>This does NOT currently work on any browser but Chrome, because they don't implement WebUSB.</li>
+      <li>On Linux, you might get an access denied error!
+        If you do, you can try creating a file at <code>/etc/udev/rules.d/50-switch.rules</code>
+        <div>With the following contents:</div>
+        <div><code>SUBSYSTEM=="usb", ATTR{idVendor}=="0955", MODE="0664", GROUP="plugdev"</code></div>
+      </li>
+      <li>This has been tested and appears to work on Linux, OSX, Android (unrooted) and Chromebooks. Your mileage may vary.</li>
+    </ul>
+  </p>
+
+  <h3>Payload:</h3>
+  <div>
+    <form id="mainForm">
+      <p>
+        <input type="radio" name="payload" id="fusee.bin" value="fusee.bin" checked>
+        <label for="fusee.bin">Example payload (fusee.bin)</label>
+      </p>
+
+      <p>
+        <input type="radio" name="payload" id="uploaded" value="uploaded">
+        <label for="uploaded">Upload payload:</label>
+        <input type="file" id="payloadUpload">
+      </p>
+    </form>
+
+    <button id="goButton">Do the thing!</button>
+  </div>
+
+  <h3>Result:</h3>
+  <textarea cols="80" rows="12" id="output"></textarea>
+
+  <script src="./fusee.bin.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
