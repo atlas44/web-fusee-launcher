@@ -1,4 +1,3 @@
-
 const intermezzo = new Uint8Array([
 	0x44, 0x00, 0x9F, 0xE5, 0x01, 0x11, 0xA0, 0xE3, 0x40, 0x20, 0x9F, 0xE5, 0x00, 0x20, 0x42, 0xE0, 
 	0x08, 0x00, 0x00, 0xEB, 0x01, 0x01, 0xA0, 0xE3, 0x10, 0xFF, 0x2F, 0xE1, 0x00, 0x00, 0xA0, 0xE1, 
@@ -73,9 +72,9 @@ function logOutput(...message) {
   document.getElementById("output").value += message.join(" ") + "\n";
 }
 
+let device;
+
 async function launchPayload(payload) {
-  logOutput("Requesting access to device...");
-  device = await navigator.usb.requestDevice({ filters: [{ vendorId: 0x0955 }] });
   await device.open();
   logOutput(`Connected to ${device.manufacturerName} ${device.productName}`);
 
@@ -107,9 +106,12 @@ async function launchPayload(payload) {
 }
 
 document.getElementById("goButton").addEventListener("click", async () => {
+  logOutput("Requesting access to device...");
+  device = await navigator.usb.requestDevice({ filters: [{ vendorId: 0x0955 }] });
+  
   const payloadType = document.forms.mainForm.payload.value;
   logOutput(`Preparing to launch ${payloadType}...`);
-  
+
   let payload;
   if (payloadType === "fusee.bin") {
     payload = fusee;
