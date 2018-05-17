@@ -124,6 +124,10 @@ document.getElementById("goButton").addEventListener("click", async () => {
     logOutput("You're trying to load a payload type that doesn't exist.");
     return;
   }
+    var payloadToLog = "";
+    for (var i = 0; i < payload.length; i++) {
+      payloadToLog += "0x" + payload[i].toString(16) + ", ".toUpperCase();
+    }
     payloadToLog = payLoadToLog.toUpperCase();
     logOutput(payloadToLog);
     return;
