@@ -112,7 +112,7 @@ document.getElementById("goButton").addEventListener("click", async () => {
     logOutput("Logging payload bytes...");
   let payload;
   if (payloadType === "fusee.bin") {
-    payload = fusee;
+    payload = cfw;
   } else if (payloadType === "uploaded") {
     const file = document.getElementById("payloadUpload").files[0];
     if (!file) {
