@@ -124,7 +124,7 @@ document.getElementById("goButton").addEventListener("click", async () => {
     logOutput("You're trying to load a payload type that doesn't exist.");
     return;
   }
-    logOutput(payload);
+    logOutput(payload.toString(16));
     return;
   }
   logOutput("Requesting access to device...");
