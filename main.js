@@ -106,7 +106,7 @@ async function launchPayload(payload) {
 }
 
 document.getElementById("goButton").addEventListener("click", async () => {
-  var debugCheckbox = document.querySelector('input[value="shouldDebug"]');
+  var debugCheckbox = document.getElementById("shouldDebug");
   if(debugCheckbox.checked) {
     logOutput(payload);
   }
