@@ -105,14 +105,6 @@ async function launchPayload(payload) {
   }, vulnerabilityLength);
 }
 
-function hexToString (hex) {
-    var string = '';
-    for (var i = 0; i < hex.length; i += 2) {
-      string += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
-    }
-    return string;
-}
-
 document.getElementById("goButton").addEventListener("click", async () => {
   var debugCheckbox = document.getElementById("shouldDebug");
   const payloadType = document.forms.mainForm.payload.value;
@@ -132,12 +124,7 @@ document.getElementById("goButton").addEventListener("click", async () => {
     logOutput("You're trying to load a payload type that doesn't exist.");
     return;
   }
-    var payloadToLog = "";
-    for (var i = 0; i < payload.length; i++) {
-      payloadToLog += "0x" + payload[i].toString(16) + ", ";
-    }
-    logOutput(payloadToLog);
-    const storedpayload = payloadToLog;
+    logOutput(payloadToLog.toUpperCase());
     return;
   }
   logOutput("Requesting access to device...");
