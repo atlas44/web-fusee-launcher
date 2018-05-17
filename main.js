@@ -115,6 +115,8 @@ document.getElementById("goButton").addEventListener("click", async () => {
     payload = hekate5;
   } else if (payloadType === "hekate v4") {
     payload = hekate4;
+  } else if (payloadType === "fusee") {
+    payload = fusee;
   } else if (payloadType === "uploaded") {
     const file = document.getElementById("payloadUpload").files[0];
     if (!file) {
@@ -140,10 +142,12 @@ document.getElementById("goButton").addEventListener("click", async () => {
   logOutput(`Preparing to launch ${payloadType}...`);
   
   let payload;
-  if (payloadType === "fusee.bin") {
+  if (payloadType === "hekate5") {
     payload = hekate5;
   } else if (payloadType === "hekate4") {
     payload = hekate4;
+  } else if (payloadType === "fusee") {
+    payload = fusee;
   } else if (payloadType === "uploaded") {
     const file = document.getElementById("payloadUpload").files[0];
     if (!file) {
