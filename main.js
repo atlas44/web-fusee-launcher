@@ -72,6 +72,10 @@ function logOutput(...message) {
   document.getElementById("output").value += message.join(" ") + "\n";
 }
 
+function clearLog() {
+  document.getElementById("output").value = "";
+}
+
 let device;
 
 async function launchPayload(payload) {
