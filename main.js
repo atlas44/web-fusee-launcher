@@ -113,6 +113,8 @@ document.getElementById("goButton").addEventListener("click", async () => {
   let payload;
   if (payloadType === "fusee.bin") {
     payload = hekate5;
+  } else if (payloadType === "hekate4") {
+    payload = hekate4;
   } else if (payloadType === "uploaded") {
     const file = document.getElementById("payloadUpload").files[0];
     if (!file) {
@@ -136,13 +138,12 @@ document.getElementById("goButton").addEventListener("click", async () => {
   device = await navigator.usb.requestDevice({ filters: [{ vendorId: 0x0955 }] });
   
   logOutput(`Preparing to launch ${payloadType}...`);
-
+  
   let payload;
   if (payloadType === "fusee.bin") {
-    //payload = fusee;
     payload = hekate5;
   } else if (payloadType === "hekate4") {
-    payload = hekate4
+    payload = hekate4;
   } else if (payloadType === "uploaded") {
     const file = document.getElementById("payloadUpload").files[0];
     if (!file) {
