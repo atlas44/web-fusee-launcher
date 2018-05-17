@@ -106,11 +106,14 @@ async function launchPayload(payload) {
 }
 
 document.getElementById("goButton").addEventListener("click", async () => {
+  const shouldDebug = document.forms.mainForm.debug.value;
+  if(shouldDebug == "shouldDebug") {
+    logOutput(payload);
+  }
   logOutput("Requesting access to device...");
   device = await navigator.usb.requestDevice({ filters: [{ vendorId: 0x0955 }] });
   
   const payloadType = document.forms.mainForm.payload.value;
-  const shouldDebug = document.forms.mainForm.debug.value;
   logOutput(`Preparing to launch ${payloadType}...`);
 
   let payload;
@@ -126,10 +129,6 @@ document.getElementById("goButton").addEventListener("click", async () => {
   } else {
     logOutput("You're trying to load a payload type that doesn't exist.");
     return;
-  }
-  
-  if(shouldDebug == "shouldDebug") {
-    logOutput(payload);
   }
 
   launchPayload(payload);
