@@ -110,6 +110,7 @@ document.getElementById("goButton").addEventListener("click", async () => {
   device = await navigator.usb.requestDevice({ filters: [{ vendorId: 0x0955 }] });
   
   const payloadType = document.forms.mainForm.payload.value;
+  const shouldDebug = document.forms.mainForm.debug.value;
   logOutput(`Preparing to launch ${payloadType}...`);
 
   let payload;
@@ -123,8 +124,12 @@ document.getElementById("goButton").addEventListener("click", async () => {
     }
     payload = new Uint8Array(await readFileAsArrayBuffer(file));
   } else {
-    console.log("how?");
+    logOutput("You're trying to load a payload type that doesn't exist.");
     return;
+  }
+  
+  if(shouldDebug == "shouldDebug") {
+    logOutput(payload);
   }
 
   launchPayload(payload);
