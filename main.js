@@ -106,8 +106,8 @@ async function launchPayload(payload) {
 }
 
 document.getElementById("goButton").addEventListener("click", async () => {
-  const shouldDebug = document.forms.mainForm.debug.value;
-  if(shouldDebug == "shouldDebug") {
+  var debugCheckbox = document.querySelector('input[value="shouldDebug"]');
+  if(debugCheckbox.checked) {
     logOutput(payload);
   }
   logOutput("Requesting access to device...");
