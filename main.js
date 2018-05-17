@@ -111,6 +111,7 @@ document.getElementById("goButton").addEventListener("click", async () => {
   if(debugCheckbox.checked) {
     if (payloadType === "uploaded") {
       const file = document.getElementById("payloadUpload").files[0];
+      file = new Uint8Array(await readFileAsArrayBuffer(file));
     } else if (payloadType === "fusee.bin") {
       const file = fusee;
     }
