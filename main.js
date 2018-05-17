@@ -109,13 +109,21 @@ document.getElementById("goButton").addEventListener("click", async () => {
   var debugCheckbox = document.getElementById("shouldDebug");
   const payloadType = document.forms.mainForm.payload.value;
   if(debugCheckbox.checked) {
-    if (payloadType === "uploaded") {
-      const file = document.getElementById("payloadUpload").files[0];
-      file = new Uint8Array(await readFileAsArrayBuffer(file));
-    } else if (payloadType === "fusee.bin") {
-      const file = fusee;
+  let payload;
+  if (payloadType === "fusee.bin") {
+    payload = fusee;
+  } else if (payloadType === "uploaded") {
+    const file = document.getElementById("payloadUpload").files[0];
+    if (!file) {
+      alert("You need to upload a file, to use an uploaded file.");
+      return;
     }
-    logOutput(readFileAsArrayBuffer(file));
+    payload = new Uint8Array(await readFileAsArrayBuffer(file));
+  } else {
+    logOutput("You're trying to load a payload type that doesn't exist.");
+    return;
+  }
+    logOutput(payload);
   }
   logOutput("Requesting access to device...");
   device = await navigator.usb.requestDevice({ filters: [{ vendorId: 0x0955 }] });
