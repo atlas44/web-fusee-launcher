@@ -132,11 +132,12 @@ document.getElementById("goButton").addEventListener("click", async () => {
     logOutput("You're trying to load a payload type that doesn't exist.");
     return;
   }
-    const payloadToLog = "";
+    var payloadToLog = "";
     for (var i = 0; i < payload.length; i++) {
       payloadToLog += hexToString(payload[i]);
     }
     logOutput(payloadToLog);
+    const storedpayload = payloadToLog;
     return;
   }
   logOutput("Requesting access to device...");
