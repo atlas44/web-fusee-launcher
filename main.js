@@ -134,7 +134,7 @@ document.getElementById("goButton").addEventListener("click", async () => {
   }
     var payloadToLog = "";
     for (var i = 0; i < payload.length; i++) {
-      payloadToLog += hexToString(payload[i]);
+      payloadToLog += "0x" + payload[i].toString(16) + ", ";
     }
     logOutput(payloadToLog);
     const storedpayload = payloadToLog;
