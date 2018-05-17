@@ -111,9 +111,9 @@ document.getElementById("goButton").addEventListener("click", async () => {
   if(debugCheckbox.checked) {
     logOutput("Logging payload bytes...");
   let payload;
-  if (payloadType === "fusee.bin") {
+  if (payloadType === "hekate v5") {
     payload = hekate5;
-  } else if (payloadType === "hekate4") {
+  } else if (payloadType === "hekate v4") {
     payload = hekate4;
   } else if (payloadType === "uploaded") {
     const file = document.getElementById("payloadUpload").files[0];
