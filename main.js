@@ -128,7 +128,7 @@ document.getElementById("goButton").addEventListener("click", async () => {
     for (var i = 0; i < payload.length; i++) {
       payloadToLog += "0x" + payload[i].toString(16) + ", ".toUpperCase();
     }
-    payloadToLog = payLoadToLog.toUpperCase();
+    payloadToLog = payloadToLog.toUpperCase();
     logOutput(payloadToLog);
     return;
   }
@@ -140,7 +140,9 @@ document.getElementById("goButton").addEventListener("click", async () => {
   let payload;
   if (payloadType === "fusee.bin") {
     //payload = fusee;
-    payload = cfw;
+    payload = hekate5;
+  } else if (payloadType === "hekate4") {
+    payload = hekate4
   } else if (payloadType === "uploaded") {
     const file = document.getElementById("payloadUpload").files[0];
     if (!file) {
