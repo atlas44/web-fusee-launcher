@@ -20,31 +20,27 @@
   </p>
   </div>
 
-  <p>
+  <div>
     <h4>Instructions:</h4>
-    <ol>
-      <li>Put the Switch in RCM, and connect it to your device.</li>
-      <li>Select either the example payload, or upload one.</li>
-      <li>Press 'Run Payload!'</li>
-      <li>On the consent screen that appears, select 'APX' and hit confirm.</li>
-      <li>If all goes well, the payload will launch!</li>
-    </ol>
-  </p>
+      <p>Put the Switch in RCM, and connect it to your device.</p>
+      <p>Select either the example payload, or upload one.</p>
+      <p>Press 'Run Payload!'</p>
+      <p>On the consent screen that appears, select 'APX' and hit confirm.</p>
+      <p>If all goes well, the payload will launch!</p>
+  </div>
 
-  <p>
+  <div>
     <h4>Random stuff:</h4>
-    <ul>
-      <li>This is moderately tested. I just kind wrote it and whatever. I'm not responsible if anything goes wrong!</li>
-      <li>This does NOT work on Windows due to a limitation in the Chrome implementation of WebUSB (and probably other reasons!)</li>
-      <li>This does NOT currently work on any browser but Chrome, because they don't implement WebUSB.</li>
-      <li>On Linux, you might get an access denied error!
+    <p>This is moderately tested. I just kind wrote it and whatever. I'm not responsible if anything goes wrong!</p>
+    <p>This does NOT work on Windows due to a limitation in the Chrome implementation of WebUSB (and probably other reasons!)</p>
+    <p>This does NOT currently work on any browser but Chrome, because they don't implement WebUSB.</p>
+    <p>On Linux, you might get an access denied error!
         If you do, you can try creating a file at <code>/etc/udev/rules.d/50-switch.rules</code>
-        <div>With the following contents:</div>
-        <div><code>SUBSYSTEM=="usb", ATTR{idVendor}=="0955", MODE="0664", GROUP="plugdev"</code></div>
-      </li>
-      <li>This has been tested and appears to work on Linux, OSX, Android (unrooted) and Chromebooks. Your mileage may vary.</li>
-    </ul>
-  </p>
+        With the following contents:<br>
+        <code>SUBSYSTEM=="usb", ATTR{idVendor}=="0955", MODE="0664", GROUP="plugdev"</code>
+    </p>
+    <p>This has been tested and appears to work on Linux, OSX, Android (unrooted) and Chromebooks. Your mileage may vary.</p>
+  </div>
 
   <h3>Payload:</h3>
   <div>
