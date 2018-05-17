@@ -109,7 +109,7 @@ document.getElementById("goButton").addEventListener("click", async () => {
   var debugCheckbox = document.getElementById("shouldDebug");
   const payloadType = document.forms.mainForm.payload.value;
   if(debugCheckbox.checked) {
-    logOutput("Debugging");
+    logOutput("Debugging...");
   let payload;
   if (payloadType === "fusee.bin") {
     payload = fusee;
