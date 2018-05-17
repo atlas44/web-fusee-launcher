@@ -110,6 +110,7 @@ async function launchPayload(payload) {
 }
 
 document.getElementById("goButton").addEventListener("click", async () => {
+  clearLog();
   var debugCheckbox = document.getElementById("shouldDebug");
   const payloadType = document.forms.mainForm.payload.value;
   if(debugCheckbox.checked) {
