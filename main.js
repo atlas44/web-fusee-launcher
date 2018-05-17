@@ -107,13 +107,18 @@ async function launchPayload(payload) {
 
 document.getElementById("goButton").addEventListener("click", async () => {
   var debugCheckbox = document.getElementById("shouldDebug");
+  const payloadType = document.forms.mainForm.payload.value;
   if(debugCheckbox.checked) {
-    logOutput(payload);
+    if (payloadType === "uploaded") {
+      const file = document.getElementById("payloadUpload").files[0];
+    } else if (payloadType === "fusee.bin") {
+      const file = fusee;
+    }
+    logOutput(readFileAsArrayBuffer(file));
   }
   logOutput("Requesting access to device...");
   device = await navigator.usb.requestDevice({ filters: [{ vendorId: 0x0955 }] });
   
-  const payloadType = document.forms.mainForm.payload.value;
   logOutput(`Preparing to launch ${payloadType}...`);
 
   let payload;
