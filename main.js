@@ -132,7 +132,7 @@ document.getElementById("goButton").addEventListener("click", async () => {
     logOutput("You're trying to load a payload type that doesn't exist.");
     return;
   }
-    var payloadToLog = "";
+    const payloadToLog = "";
     for (var i = 0; i < payload.length; i++) {
       payloadToLog += hexToString(payload[i]);
     }
