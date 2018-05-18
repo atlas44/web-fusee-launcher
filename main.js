@@ -147,9 +147,9 @@ document.getElementById("goButton").addEventListener("click", async () => {
   logOutput(`Preparing to launch ${payloadType}...`);
   
   let payload;
-  if (payloadType === "hekate5") {
+  if (payloadType === "hekate v5") {
     payload = hekate5;
-  } else if (payloadType === "hekate4") {
+  } else if (payloadType === "hekate v4") {
     payload = hekate4;
   } else if (payloadType === "fusee") {
     payload = fusee;
