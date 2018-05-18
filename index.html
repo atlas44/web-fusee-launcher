@@ -74,13 +74,13 @@
       </p>
     </form>
 
-    <button class="btn" id="goButton">Run Payload!</button><br><br>
-    <button class="btn" id="clearlogsbutton" onclick="clearLog();">Clear Logs</button>
+    <button class="btn" id="goButton">Run Payload!</button>
   </div>
   </div>
 
   <h3>Logs:</h3>
-  <textarea cols="80" rows="12" id="output"></textarea>
+  <textarea cols="100" rows="15" id="output" readonly></textarea><br>
+    <button class="btn" id="clearlogsbutton" onclick="clearLog();">Clear Logs</button>
 
   <script src="./fusee.bin.js"></script>
   <script src="./main.js"></script>
