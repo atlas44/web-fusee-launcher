@@ -183,4 +183,4 @@ function openInstructions() {
     document.getElementById("infodiv").innerHTML = "<h4>Instructions:</h4><p>Put the Switch in RCM, and connect it to your device.</p><p>Select either the example payload, or upload one.</p><p>Press 'Run Payload!'</p><p>On the consent screen that appears, select 'APX' and hit confirm.</p><p>If all goes well, the payload will launch!</p>";
 }
   
-document.getElementById("payloadUpload").addEventListener("change", () => document.forms.mainForm.payload.value = "uploaded");
+document.getElementById("payloadUpload").addEventListener("change", () => document.forms.mainForm.payload.value = "uploaded";
