@@ -122,6 +122,8 @@ document.getElementById("goButton").addEventListener("click", async () => {
     payload = hekate4;
   } else if (payloadType === "fusee") {
     payload = fusee;
+  } else if (payloadType === "instaboot") {
+    payload = instaboot;
   } else if (payloadType === "uploaded") {
     const file = document.getElementById("payloadUpload").files[0];
     if (!file) {
@@ -153,6 +155,8 @@ document.getElementById("goButton").addEventListener("click", async () => {
     payload = hekate4;
   } else if (payloadType === "fusee") {
     payload = fusee;
+  } else if (payloadType === "instaboot") {
+    payload = instaboot;
   } else if (payloadType === "uploaded") {
     const file = document.getElementById("payloadUpload").files[0];
     if (!file) {
