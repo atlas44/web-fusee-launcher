@@ -144,7 +144,7 @@ document.getElementById("goButton").addEventListener("click", async () => {
   logOutput("Requesting access to device...");
   device = await navigator.usb.requestDevice({ filters: [{ vendorId: 0x0955 }] });
   
-  logOutput(`<p style='color:blue'>Preparing to launch ${payloadType}...</p>`);
+  logOutput(`<span style='color:blue'>Preparing to launch ${payloadType}...</span>`);
   
   let payload;
   if (payloadType === "hekate v5") {
