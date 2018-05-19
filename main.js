@@ -165,7 +165,7 @@ document.getElementById("goButton").addEventListener("click", async () => {
     }
     payload = new Uint8Array(await readFileAsArrayBuffer(file));
   } else {
-    logOutput("<p style='color:red'>You're trying to load a payload type that doesn't exist.</p>");
+    logOutput("<span style='color:red'>You're trying to load a payload type that doesn't exist.</span>");
     return;
   }
 
