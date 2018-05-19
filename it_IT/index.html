@@ -14,7 +14,7 @@
     <p>Fusee Launcher portato a JavaScript usando WebUSB.</p>
     <div id="disclaimer">
   <p>
-    Il source puo essere trovato a <a href="https://github.com/ElijahZAwesome/web-cfw-loader/">GitHub</a> (o premendo guarda source, non c'è backend!).
+    Il source puo essere trovato a <a href="https://github.com/ElijahZAwesome/web-cfw-loader/">GitHub</a> (o premendo guarda source, ma non c'è backend!).
     Portato da <a href="https://github.com/reswitched/fusee-launcher">fusee-launcher</a>.
     Grazie tante a ktemkin e ReSwitched, e non dimentichiamoci <br><a href="https://atlas44.s3-us-west-2.amazonaws.com/web-fusee-launcher/index.html">Atlas44 e il suo sito</a> come punto di inizio per questo.
   </p>
@@ -22,54 +22,54 @@
   </div>
   <br>
   
-  <button class="btn" id="instructionsbutton" onclick="openInstructions();">Instructions</button>
+  <button class="btn" id="instructionsbutton" onclick="openInstructions();">Istruzioni</button>
   <button class="btn" id="infobutton" onclick="openInfo();">Info</button>
 
   <div id="infodiv"></div>
   
   <div>
-  <h1>Load a Payload:</h1>
+  <h1>Carica un payload:</h1>
   <div>
     <form id="mainForm">
       <p>
         <input type="radio" name="payload" id="instaboot" value="instaboot" checked>
-        <label for="instaboot">Instantly boot CFW (5.0.x)</label>
+        <label for="instaboot">Avvia istantaneamente CFW (5.0.x)</label>
       </p>
 
       <p>
         <input type="radio" name="payload" id="hekate v5" value="hekate v5">
-        <label for="hekate v5">Hekate for 5.0.x Switches</label>
+        <label for="hekate v5">Hekate per Switch su 5.0.X</label>
       </p>
       
       <p>
         <input type="radio" name="payload" id="hekate v4" value="hekate v4">
-        <label for="hekate v4">Hekate for 4.x Switches</label>
+        <label for="hekate v4">Hekate per Switch su 5.0.X</label>
       </p>
       
       <p>
         <input type="radio" name="payload" id="fusee" value="fusee">
-        <label for="fusee">(Re)Switched test payload (fusee)</label>
+        <label for="fusee">(Re)Switched payload di test (fusee)</label>
       </p>
 
       <p>
         <input type="radio" name="payload" id="uploaded" value="uploaded">
-        <label for="uploaded">Upload payload:<br></label>
+        <label for="uploaded">Carica payload:<br></label>
         <input type="file" id="payloadUpload" accept=".bin">
       </p>
       
       <p>
         <input type="checkbox" name="shouldDebug" id="shouldDebug">
-        <label for="shouldDebug">Get payload byte array (don't sploit)</label>
+        <label for="shouldDebug">Ottieni byte array del payload (no exploit)</label>
       </p>
     </form>
 
-    <button class="btn" id="goButton">Run Payload!</button>
+    <button class="btn" id="goButton">Avvia Payload!</button>
   </div>
   </div>
 
   <h3>Log:</h3>
   <div id="output"></div><br>
-    <button class="btn" id="clearlogsbutton" onclick="clearLog();">Clear Logs</button>
+    <button class="btn" id="clearlogsbutton" onclick="clearLog();">Pulisci logs</button>
 
   <script src="./payloads.js"></script>
   <script src="./main.js"></script>
