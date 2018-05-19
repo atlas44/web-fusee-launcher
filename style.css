@@ -10,7 +10,9 @@ body {
 
 #title {
   text-align: center;
-  padding: 20px;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  background-size: cover;
   background-color: black;
   background-image: url("https://icdn1.digitaltrends.com/image/nintendo-switch-review-photos-pdx-580.jpg");
   color: white;
