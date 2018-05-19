@@ -69,11 +69,11 @@ function readFileAsArrayBuffer(file) {
 }
 
 function logOutput(...message) {
-  document.getElementById("output").innerHTML = document.getElementById("output").innerHTML + message.join(" ") + "\n";
+  document.getElementById("output").innerHTML = document.getElementById("output").innerHTML + message.join(" ") + "<br>";
 }
 
 function clearLog() {
-  document.getElementById("output").value = "";
+  document.getElementById("output").innerHTML = "";
 }
 
 let device;
