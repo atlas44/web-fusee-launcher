@@ -176,7 +176,7 @@ function openInfo() {
   if(document.getElementById("infodiv").innerHTML != "") {
     document.getElementById("infodiv").innerHTML = "";
   } else {
-    document.getElementById("infodiv").innerHTML = "<h4>Info:</h4><p>This is moderately tested. Although no issues have been discovered, I'm not responsible if anything goes wrong!</p><p>This does NOT work on Windows due to a limitation in the Chrome implementation of WebUSB (and probably other reasons!)</p><p>This does NOT currently work on any browser but Chrome, because they don't implement WebUSB.</p><p>On Linux, you might get an access denied error!If you do, you can try creating a file at <code>/etc/udev/rules.d/50-switch.rules</code>With the following contents:<br><code>SUBSYSTEM==\"usb\", ATTR{idVendor}==\"0955\", MODE=\"0664\", GROUP=\"plugdev\"</code></p><p>Hekate for 4.x has not been tested, as I do not have a 4.x switch. However, all other payloads will be tested as they are uploaded.</p><p>This has been tested and appears to work on Linux, OSX, Android (unrooted) and Chromebooks. Your mileage may vary.</p>";
+    document.getElementById("infodiv").innerHTML = "<h4>Info:</h4><p>Questo è stato moderatamente testato. Anche se nessun problema è stato riportato, non sono responsabile in caso di brick!</p><p>Questo non funziona in Windows per la implementazione scorretta di WinUSB di Chrome(E probabilmente altre ragioni)!</p><p>Questo non funziona attualmente su nessun browser ma Chrome perchè è l'unico con WinUSB.</p><p>Su Linux, potresti ottenere un errore Access Denied! Se succede, potresti provare a creare un file a <code>/etc/udev/rules.d/50-switch.rules</code>Con i seguenti contenuti:<br><code>SUBSYSTEM==\"usb\", ATTR{idVendor}==\"0955\", MODE=\"0664\", GROUP=\"plugdev\"</code></p><p>Hekate 4.x non è stato testato visto che non ho una Switch 4.x. Tuttavia, tutti gli altri payload verranno testati al momento dell'aggiunta.</p><p>Questo è stato testato e funziona su Linux, OSX, Android (no root) and Chromebooks. Risultati potrebbero variare.</p>";
   }
 }
 
@@ -184,7 +184,7 @@ function openInstructions() {
   if(document.getElementById("infodiv").innerHTML != "") {
     document.getElementById("infodiv").innerHTML = "";
   } else {
-    document.getElementById("infodiv").innerHTML = "<h4>Instructions:</h4><p>Put the Switch in RCM, and connect it to your device.</p><p>Select either the example payload, or upload one.</p><p>Press 'Run Payload!'</p><p>On the consent screen that appears, select 'APX' and hit confirm.</p><p>If all goes well, the payload will launch!</p>";
+    document.getElementById("infodiv").innerHTML = "<h4>Istruzioni:</h4><p>Metti lo Switch in RCM e collega il dispositivo</p><p>Scegli il payload di esempio o caricane uno.</p><p>Pemi 'Avvia payload!'</p><p>Nello schermo di conferma, scegli 'APX' ae premi conferma.</p><p>Se tutto funziona il payload si avvierà!</p>";
   }
 }
   
