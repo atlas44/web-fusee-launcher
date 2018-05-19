@@ -69,7 +69,7 @@ function readFileAsArrayBuffer(file) {
 }
 
 function logOutput(...message) {
-  document.getElementById("output").value += message.join(" ") + "\n";
+  document.getElementById("output").innerHTML += message.join(" ") + "\n";
 }
 
 function clearLog() {
