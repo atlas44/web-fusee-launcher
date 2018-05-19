@@ -19,6 +19,15 @@ body {
   top: 0px;
 }
 
+#output {
+  margin-left: 0px;
+  width: 700px;
+  height: 200px;
+  border: 1px solid black;
+  margin-right: 0px;
+  margin: auto;
+}
+
 .btn {
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
