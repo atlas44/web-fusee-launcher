@@ -23,15 +23,15 @@
 <body class="container-fluid">
   <div class="row" id="title">
     <h1>Nintendo Switch Payload Loader</h1>
-    <h4>Fusee Launcher portato a JavaScript usando WebUSB.</h4>
+    <h4>Fusee Launcher portado para JavaScript usando WebUSB.</h4>
   </div>
 
   <div class="row margin-top-md">
     <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
       <div class="btn-group" role="group" aria-label="...">
         <a class="btn btn-info" href="../index.html">English</a>
-        <a class="btn btn-info disabled" href="#">Italiano</a>
-        <a class="btn btn-info" href="../pt_BR/index.html">Português</a>
+        <a class="btn btn-info" href="../it_IT/index.html">Italiano</a>
+        <a class="btn btn-info disabled" href="#">Português</a>
       </div>
     </div>
   </div>
@@ -40,42 +40,42 @@
     <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
 
       <div class="alert alert-danger" role="alert">
-        <p>Questo è stato moderatamente testato. Anche se nessun problema è stato riportato, non sono responsabile in caso di brick!</p>
+        <p>Esta ferramenta não foi completamente testada. Apesar de não ter encontrado nenhuma falha, não me responsabilizo se algo der errado!</p>
       </div>
 
       <div class="alert alert-warning alert-dismissible" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <p>Questo non funziona in Windows per la implementazione scorretta di WinUSB di Chrome(E probabilmente altre ragioni)!</p>
+        <p>Isto NÃO funciona no Windows devido uma limitação do Chrome na implementação do WebUSB (e, possivelmente, outros motivos).</p>
       </div>
 
       <div class="alert alert-warning alert-dismissible" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <p>Questo non funziona attualmente su nessun browser ma Chrome perchè è l'unico con WinUSB.</p>
+        <p>Isto NÃO funciona, atualmente, em nenhum browser além do Chrome, que é o único a implementar WebUSB.</p>
       </div>
 
       <div class="alert alert-warning alert-dismissible" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <p>Su Linux, potresti ottenere un errore Access Denied! Se succede, potresti provare a creare un file a <code>/etc/udev/rules.d/50-switch.rules</code>Con i seguenti contenuti:<br><code>SUBSYSTEM==\"usb\", ATTR{idVendor}==\"0955\", MODE=\"0664\", GROUP=\"plugdev\"</code></p>
+        <p>No Linux você pode receber um erro de Acesso Negado! Caso receba, tente criar o arquivo <code>/etc/udev/rules.d/50-switch.rules</code> com o seguinte conteúdo: <br><code>SUBSYSTEM==\"usb\", ATTR{idVendor}==\"0955\", MODE=\"0664\", GROUP=\"plugdev\"</code></p>
       </div>
 
       <div class="alert alert-warning alert-dismissible" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <p>Hekate 4.x non è stato testato visto che non ho una Switch 4.x. Tuttavia, tutti gli altri payload verranno testati al momento dell'aggiunta.</p>
+        <p>Hekate 4.x NÃO foi testado, já que não tenho um Switch na versão 4.x. Entretanto todos os outros payloads serão testados antes de disponibilizados.</p>
       </div>
 
       <div class="alert alert-warning alert-dismissible" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <p>Questo è stato testato e funziona su Linux, OSX, Android (no root) and Chromebooks. Risultati potrebbero variare.</p>
+        <p>Isto foi testado -e aparentemente funciona- no Linux, OSX, Android (sem precisar de root) e Chromebooks. Resultados podem variar.</p>
       </div>
 
       <div class="alert alert-info" role="alert">
-        <h4>Istruzioni:</h4>
+        <h4>Instruções:</h4>
         <ul>
-          <li>Metti lo Switch in RCM e collega il dispositivo.</li>
-          <li>Scegli il payload di esempio o caricane uno.</li>
-          <li>Pemi 'Avvia payload!'</li>
-          <li>Nello schermo di conferma, scegli 'APX' ae premi conferma.</li>
-          <li>Se tutto funziona il payload si avvierà!</li>
+          <li>Coloque o Switch no modo RCM e conecte-o ao dispositivo.</li>
+          <li>Escolha um dos payloads disponíveis ou faça upload de um.</li>
+          <li>Clique em "Enviar Payload"!</li>
+          <li>No diálogo de confirmação escolha "APX" e clique em Confirmar</li>
+          <li>Se tudo der certo, o payload executará!</li>
         </ul>
       </div>
     </div>
@@ -83,7 +83,7 @@
   
   <div class="row">
     <div class="class=col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-        <h1>Setup Payload Delivery</h1>
+        <h1>Configurar Entrega de Payload</h1>
 
         <form id="mainForm">
           <div class="row">
@@ -93,11 +93,11 @@
 
             <div class="col-xs-6">
               <select class="pull-right" id="payloadSelect" onchange="onSelectChange()">
-                <option value="instaboot">Avvia istantaneamente CFW (5.0.x)</option>
-                <option value="hekate v5">Hekate per Switch su 5.0.X</option>
-                <option value="hekate v4">Hekate per Switch su 4.0.X</option>
-                <option value="fusee">(Re)Switched payload di test (fusee)</option>
-                <option value="uploaded">Carica payload</option>
+                <option value="instaboot">Execução Instantânea CFW (5.0.x)</option>
+                <option value="hekate v5">Hekate para Switch ver. 5.0.X</option>
+                <option value="hekate v4">Hekate para Switch ver. 4.0.X</option>
+                <option value="fusee">Payload de teste do time (Re)Switched (fusee)</option>
+                <option value="uploaded">Upload de Payload</option>
               </select>
             </div>
           </div>
@@ -111,7 +111,7 @@
 
           <div class="row margin-top-md">
             <div class="col-xs-10">
-              <h4>Ottieni byte array del payload (no exploit)</h4>
+              <h4>Recuperar array de bytes do payload (favor não exploitar)</h4>
             </div>
             <div class="col-xs-2">
               <input class="pull-right" type="checkbox" name="shouldDebug" id="shouldDebug">
@@ -122,7 +122,7 @@
   
         <div class="row margin-top-md">
           <div class="col-xs-12">
-            <button class="btn btn-primary btn-lg pull-right" id="goButton">Avvia Payload!</button>
+            <button class="btn btn-primary btn-lg pull-right" id="goButton">Enviar Payload!</button>
           </div>
         </div>
         
@@ -134,7 +134,7 @@
     <div class="class=col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
         <h3>Log:</h3>
         <div id="output"></div>
-        <button class="btn btn-primary pull-right margin-top-md" id="clearlogsbutton" onclick="clearLog();">Pulisci Logs</button><br><br>      
+        <button class="btn btn-primary pull-right margin-top-md" id="clearlogsbutton" onclick="clearLog();">Limpar Logs</button><br><br>      
     </div>
   </div>
 
@@ -146,9 +146,9 @@
 <div class="row margin-top-md" id="page-footer">
   <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
       <div id="disclaimer">
-          <p>Il source puo essere trovato a <a href="https://github.com/ElijahZAwesome/web-cfw-loader/">GitHub</a> (o premendo guarda source, ma non c'è backend!).</p>
-          <p>Portato da <a href="https://github.com/reswitched/fusee-launcher">fusee-launcher</a>.</p>
-          <p>Grazie tante a ktemkin e ReSwitched, e non dimentichiamoci <br><a href="https://atlas44.s3-us-west-2.amazonaws.com/web-fusee-launcher/index.html">Atlas44 e il suo sito</a> come punto di inizio per questo.</p>
+          <p>Código fonte disponível em <a href="https://github.com/ElijahZAwesome/web-cfw-loader/">GitHub</a> (ou simplesmente clicando 'ver código', não há backend).</p>
+          <p>Um port do <a href="https://github.com/reswitched/fusee-launcher">fusee-launcher</a>.</p>
+          <p>Muito obrigado a Ktemkin e time (Re)Switched, bem como <br><a href="https://atlas44.s3-us-west-2.amazonaws.com/web-fusee-launcher/index.html">Atlas44 e seu website</a> que é a base deste.</p>
       </div>
   </div>
 </div>

@@ -6,75 +6,152 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link href="favicon.png" rel="icon"  type="image/x-icon" />
   <title>Switch Payload Loader v1.2</title>
+
+  <!-- JQuery: needed for some Bootstrap Components -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Bootstrap 3 framework -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </head>
 
-<body>
-  <div id="title">
+<body class="container-fluid">
+  <div class="row" id="title">
     <h1>Nintendo Switch Payload Loader</h1>
-    <p>Fusee Launcher ported to JavaScript using WebUSB.</p>
-    <div id="disclaimer">
-  <p>
-    Source can be found on <a href="https://github.com/ElijahZAwesome/web-cfw-loader/">GitHub</a> (or by hitting view source, there is no backend!).<br>
-    Ported from <a href="https://github.com/reswitched/fusee-launcher">fusee-launcher</a>.
-    Thanks to ktemkin and ReSwitched, as well as <br><a href="https://atlas44.s3-us-west-2.amazonaws.com/web-fusee-launcher/index.html">Atlas44 and his website</a> as a beginning point for this one.
-  </p>
+    <h4>Fusee Launcher ported to JavaScript using WebUSB.</h4>
   </div>
+
+  <div class="row margin-top-md">
+    <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+      <div class="btn-group" role="group" aria-label="...">
+        <a class="btn btn-info disabled" href="#">English</a>
+        <a class="btn btn-info" href="./it_IT/index.html">Italiano</a>
+        <a class="btn btn-info" href="./pt_BR/index.html">Português</a>
+      </div>
+    </div>
   </div>
-  <br>
-  <p style="text-align: center; font-size: 1vw;">Se sei italiano, clicca <a href="./it_IT">qui.</a></p><br>
+
+
+  <div class="row margin-top-md" id="infodiv">
+    <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+
+      <div class="alert alert-danger" role="alert">
+        <p>This is moderately tested. Although no issues have been discovered, I'm not responsible if anything goes wrong!</p>
+      </div>
+
+      <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p>This does NOT work on Windows due to a limitation in the Chrome implementation of WebUSB (and probably other reasons!)</p>
+      </div>
+
+      <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p>This does NOT currently work on any browser but Chrome, because they don't implement WebUSB.</p>
+      </div>
+
+      <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p>On Linux, you might get an access denied error! If you do, you can try creating a file at <code>/etc/udev/rules.d/50-switch.rules</code>With the following contents:<br><code>SUBSYSTEM==\"usb\", ATTR{idVendor}==\"0955\", MODE=\"0664\", GROUP=\"plugdev\"</code></p>
+      </div>
+
+      <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p>Hekate for 4.x has not been tested, as I do not have a 4.x switch. However, all other payloads will be tested as they are uploaded.</p>
+      </div>
+
+      <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p>This has been tested and appears to work on Linux, OSX, Android (unrooted) and Chromebooks. Your mileage may vary.</p>
+      </div>
+
+      <div class="alert alert-info" role="alert">
+        <h4>Instructions:</h4>
+        <ul>
+          <li>Put the Switch in RCM, and connect it to your device.</li>
+          <li>Select either the example payload, or upload one.</li>
+          <li>Press 'Run Payload!'</li>
+          <li>On the consent screen that appears, select 'APX' and hit confirm.</li>
+          <li>If all goes well, the payload will launch!</li>
+        </ul>
+      </div>
+    </div>
+  </div>
   
-  <button class="btn" id="instructionsbutton" onclick="openInstructions();">Instructions</button>
-  <button class="btn" id="infobutton" onclick="openInfo();">Info</button>
+  <div class="row">
+    <div class="class=col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+        <h1>Setup Payload Delivery</h1>
 
-  <div id="infodiv"></div>
+        <form id="mainForm">
+          <div class="row">
+            <div class="col-xs-6">
+              <h4>Select Payload:</h4>
+            </div>
+
+            <div class="col-xs-6">
+              <select class="pull-right" id="payloadSelect" onchange="onSelectChange()">
+                <option value="instaboot">Instantly boot CFW (5.0.x)</option>
+                <option value="hekate v5">Hekate for 5.0.x Switches</option>
+                <option value="hekate v4">Hekate for 4.0.x Switches</option>
+                <option value="fusee">(Re)Switched test payload (fusee)</option>
+                <option value="uploaded">Upload payload</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row" id="uploadContainer" style="display: none">
+            <div class="row-xs-12">
+              <input style="float: right" type="file" id="payloadUpload" accept=".bin"/>
+            </div>
+          </div>
+          <div class="row divider-line"></div>
+
+          <div class="row margin-top-md">
+            <div class="col-xs-10">
+              <h4>Get payload byte array (don't sploit)</h4>
+            </div>
+            <div class="col-xs-2">
+              <input class="pull-right" type="checkbox" name="shouldDebug" id="shouldDebug">
+            </div>
+          </div>
+          <div class="row divider-line"></div>           
+        </form>
   
-  <div>
-  <h1>Load a Payload:</h1>
-  <div>
-    <form id="mainForm">
-      <p>
-        <input type="radio" name="payload" id="instaboot" value="instaboot" checked>
-        <label for="instaboot">Instantly boot CFW (5.0.x)</label>
-      </p>
-
-      <p>
-        <input type="radio" name="payload" id="hekate v5" value="hekate v5">
-        <label for="hekate v5">Hekate for 5.0.x Switches</label>
-      </p>
-      
-      <p>
-        <input type="radio" name="payload" id="hekate v4" value="hekate v4">
-        <label for="hekate v4">Hekate for 4.x Switches</label>
-      </p>
-      
-      <p>
-        <input type="radio" name="payload" id="fusee" value="fusee">
-        <label for="fusee">(Re)Switched test payload (fusee)</label>
-      </p>
-
-      <p>
-        <input type="radio" name="payload" id="uploaded" value="uploaded">
-        <label for="uploaded">Upload payload:<br></label>
-        <input type="file" id="payloadUpload" accept=".bin">
-      </p>
-      
-      <p>
-        <input type="checkbox" name="shouldDebug" id="shouldDebug">
-        <label for="shouldDebug">Get payload byte array (don't sploit)</label>
-      </p>
-    </form>
-
-    <button class="btn" id="goButton">Run Payload!</button>
-  </div>
+        <div class="row margin-top-md">
+          <div class="col-xs-12">
+            <button class="btn btn-primary btn-lg pull-right" id="goButton">Deliver Payload!</button>
+          </div>
+        </div>
+        
+    </div>
   </div>
 
-  <h3>Log:</h3>
-  <div id="output"></div><br>
-    <button class="btn" id="clearlogsbutton" onclick="clearLog();">Clear Logs</button><br><br>
+
+  <div class="row">
+    <div class="class=col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+        <h3>Log:</h3>
+        <div id="output"></div>
+        <button class="btn btn-primary pull-right margin-top-md" id="clearlogsbutton" onclick="clearLog();">Clear Logs</button><br><br>      
+    </div>
+  </div>
+
 
   <script src="./payloads.js"></script>
   <script src="./main.js"></script>
 </body>
 
-</html
-  >
+<div class="row margin-top-md" id="page-footer">
+  <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+      <div id="disclaimer">
+          <p>Source can be found on <a href="https://github.com/ElijahZAwesome/web-cfw-loader/">GitHub</a> (or by hitting view source, there is no backend!).</p>
+          <p>Ported from <a href="https://github.com/reswitched/fusee-launcher">fusee-launcher</a>.</p>
+          <p>Thanks to ktemkin and ReSwitched, as well as <br><a href="https://atlas44.s3-us-west-2.amazonaws.com/web-fusee-launcher/index.html">Atlas44 and his website</a> as a beginning point for this one. </p>
+      </div>
+  </div>
+</div>
+
+</html>
