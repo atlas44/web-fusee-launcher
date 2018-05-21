@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+@media only screen and (max-width: 768px) {
+  #pageBody {
+    font-size: 3vw;
+  }
+}
+
 body {
   margin-top: 0px;
   margin-left: 0px;
