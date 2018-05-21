@@ -20,7 +20,7 @@
 
 </head>
 
-<body class="container-fluid">
+<body class="container-fluid" id="pageBody">
   <div class="row" id="title">
     <h1>Nintendo Switch Payload Loader</h1>
     <h4>Fusee Launcher portado para JavaScript usando WebUSB.</h4>
@@ -55,12 +55,7 @@
 
       <div class="alert alert-warning alert-dismissible" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <p>No Linux você pode receber um erro de Acesso Negado! Caso receba, tente criar o arquivo <code>/etc/udev/rules.d/50-switch.rules</code> com o seguinte conteúdo: <br><code>SUBSYSTEM==\"usb\", ATTR{idVendor}==\"0955\", MODE=\"0664\", GROUP=\"plugdev\"</code></p>
-      </div>
-
-      <div class="alert alert-warning alert-dismissible" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <p>Hekate 4.x NÃO foi testado, já que não tenho um Switch na versão 4.x. Entretanto todos os outros payloads serão testados antes de disponibilizados.</p>
+        <p>No Linux você pode receber um erro de 'Acesso Negado' ou de 'Dispositivo Compatível não Encontrado'! Caso receba, tente criar o arquivo <code>/etc/udev/rules.d/50-switch.rules</code> com o seguinte conteúdo: <br><code>SUBSYSTEM==\"usb\", ATTR{idVendor}==\"0955\", MODE=\"0664\", GROUP=\"plugdev\"</code></p>
       </div>
 
       <div class="alert alert-warning alert-dismissible" role="alert">
@@ -69,12 +64,12 @@
       </div>
 
       <div class="alert alert-info" role="alert">
-        <h4>Instruções:</h4>
+        <p><strong>Instruções:</strong></p>
         <ul>
           <li>Coloque o Switch no modo RCM e conecte-o ao dispositivo.</li>
           <li>Escolha um dos payloads disponíveis ou faça upload de um.</li>
           <li>Clique em "Enviar Payload"!</li>
-          <li>No diálogo de confirmação escolha "APX" e clique em Confirmar</li>
+          <li>No diálogo de confirmação escolha "APX" e clique em 'Conectar-se'</li>
           <li>Se tudo der certo, o payload executará!</li>
         </ul>
       </div>
@@ -103,7 +98,7 @@
           </div>
 
           <div class="row" id="uploadContainer" style="display: none">
-            <div class="row-xs-12">
+            <div class="col-xs-12">
               <input style="float: right" type="file" id="payloadUpload" accept=".bin"/>
             </div>
           </div>
@@ -131,7 +126,7 @@
 
 
   <div class="row">
-    <div class="class=col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+    <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
         <h3>Log:</h3>
         <div id="output"></div>
         <button class="btn btn-primary pull-right margin-top-md" id="clearlogsbutton" onclick="clearLog();">Limpar Logs</button><br><br>      

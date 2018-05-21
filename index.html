@@ -20,7 +20,7 @@
 
 </head>
 
-<body class="container-fluid">
+<body class="container-fluid" id="pageBody">
   <div class="row" id="title">
     <h1>Nintendo Switch Payload Loader</h1>
     <h4>Fusee Launcher ported to JavaScript using WebUSB.</h4>
@@ -60,12 +60,7 @@
 
       <div class="alert alert-warning alert-dismissible" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <p>On Linux, you might get an access denied error! If you do, you can try creating a file at <code>/etc/udev/rules.d/50-switch.rules</code>With the following contents:<br><code>SUBSYSTEM==\"usb\", ATTR{idVendor}==\"0955\", MODE=\"0664\", GROUP=\"plugdev\"</code></p>
-      </div>
-
-      <div class="alert alert-warning alert-dismissible" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <p>Hekate for 4.x has not been tested, as I do not have a 4.x switch. However, all other payloads will be tested as they are uploaded.</p>
+        <p>On Linux, you might get an 'Access Denied' or 'No Compatible Device' error on the Connect dialog! If you do, you can try creating a file at <code>/etc/udev/rules.d/50-switch.rules</code>With the following contents:<br><code>SUBSYSTEM==\"usb\", ATTR{idVendor}==\"0955\", MODE=\"0664\", GROUP=\"plugdev\"</code></p>
       </div>
 
       <div class="alert alert-warning alert-dismissible" role="alert">
@@ -74,20 +69,21 @@
       </div>
 
       <div class="alert alert-info" role="alert">
-        <h4>Instructions:</h4>
+        <p><strong>Instructions:</strong></p>
         <ul>
           <li>Put the Switch in RCM, and connect it to your device.</li>
           <li>Select either the example payload, or upload one.</li>
           <li>Press 'Deliver Payload!'</li>
-          <li>On the consent screen that appears, select 'APX' and hit confirm.</li>
+          <li>On the consent screen that appears, select 'APX' and hit 'Connect'.</li>
           <li>If all goes well, the payload will launch!</li>
         </ul>
       </div>
+
     </div>
   </div>
   
   <div class="row">
-    <div class="class=col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+    <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
         <h1>Setup Payload Delivery</h1>
 
         <form id="mainForm">
@@ -108,7 +104,7 @@
           </div>
 
           <div class="row" id="uploadContainer" style="display: none">
-            <div class="row-xs-12">
+            <div class="col-xs-12">
               <input style="float: right" type="file" id="payloadUpload" accept=".bin"/>
             </div>
           </div>
@@ -126,8 +122,8 @@
         </form>
   
         <div class="row margin-top-md">
-          <div class="col-xs-12">
-            <button class="btn btn-primary btn-lg pull-right" id="goButton">Deliver Payload!</button>
+          <div class="col-xs-6 col-xs-offset-6 col-md-4 col-md-offset-8">
+            <button class="btn btn-primary btn-lg btn-block" id="goButton">Deliver Payload!</button>
           </div>
         </div>
         
@@ -136,7 +132,7 @@
 
 
   <div class="row">
-    <div class="class=col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+    <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
         <h3>Log:</h3>
         <div id="output"></div>
         <button class="btn btn-primary pull-right margin-top-md" id="clearlogsbutton" onclick="clearLog();">Clear Logs</button><br><br>      

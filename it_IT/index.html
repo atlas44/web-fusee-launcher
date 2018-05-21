@@ -20,7 +20,7 @@
 
 </head>
 
-<body class="container-fluid">
+<body class="container-fluid" id="pageBody">
   <div class="row" id="title">
     <h1>Nintendo Switch Payload Loader</h1>
     <h4>Fusee Launcher portato a JavaScript usando WebUSB.</h4>
@@ -60,16 +60,11 @@
 
       <div class="alert alert-warning alert-dismissible" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <p>Hekate 4.x non è stato testato visto che non ho una Switch 4.x. Tuttavia, tutti gli altri payload verranno testati al momento dell'aggiunta.</p>
-      </div>
-
-      <div class="alert alert-warning alert-dismissible" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <p>Questo è stato testato e funziona su Linux, OSX, Android (no root) and Chromebooks. Risultati potrebbero variare.</p>
       </div>
 
       <div class="alert alert-info" role="alert">
-        <h4>Istruzioni:</h4>
+        <p><strong>Istruzioni:</strong></p>
         <ul>
           <li>Metti lo Switch in RCM e collega il dispositivo.</li>
           <li>Scegli il payload di esempio o caricane uno.</li>
@@ -82,7 +77,7 @@
   </div>
   
   <div class="row">
-    <div class="class=col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+    <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
         <h1>Setup Payload Delivery</h1>
 
         <form id="mainForm">
@@ -103,7 +98,7 @@
           </div>
 
           <div class="row" id="uploadContainer" style="display: none">
-            <div class="row-xs-12">
+            <div class="col-xs-12">
               <input style="float: right" type="file" id="payloadUpload" accept=".bin"/>
             </div>
           </div>
@@ -131,7 +126,7 @@
 
 
   <div class="row">
-    <div class="class=col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+    <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
         <h3>Log:</h3>
         <div id="output"></div>
         <button class="btn btn-primary pull-right margin-top-md" id="clearlogsbutton" onclick="clearLog();">Pulisci Logs</button><br><br>      
