@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-@media only screen and (max-width: 768px) {
-  #pageBody {
+@media only screen and (max-device-width: 768px) {
+  #title h1 {
+    font-size: 5vw;
+  }
+
+  #pageBody, #mainForm h4, #goButton, #clearlogsbutton, .btn-group a, #title h4 {
     font-size: 3vw;
+  }
+
+  #shouldDebug {
+    width: 4vw;
+    height: 4vw;
   }
 }
 
