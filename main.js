@@ -201,6 +201,3 @@ function openInstructions() {
     document.getElementById("infodiv").innerHTML = "";
   }
 }
-
-
-document.getElementById("payloadUpload").addEventListener("change", () => document.getElementById("payloadSelect").value = "uploaded");
