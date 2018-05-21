@@ -137,7 +137,7 @@ document.getElementById("goButton").addEventListener("click", async () => {
   if (payloadType === "hekate v5") {
     payload = hekate5;
 
-  } else if (payloadType === "hekate v4") {
+  } else if (payloadType === "hekatev4") {
     payload = hekate4;
 
   } else if (payloadType === "fusee") {
