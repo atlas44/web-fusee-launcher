@@ -203,4 +203,4 @@ function openInstructions() {
 }
 
 
-document.getElementById("payloadUpload").addEventListener("change", () => document.forms.mainForm.payload.value = "uploaded");
+document.getElementById("payloadUpload").addEventListener("change", () => document.getElementById("payloadSelect").value = "uploaded");
