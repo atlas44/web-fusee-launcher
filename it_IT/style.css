@@ -20,6 +20,10 @@ body {
   top: 0px;
 }
 
+#uploadContainer {
+  margin-bottom: 8px;
+}
+
 #output {
   height: 200px;
   border: 1px solid black;
