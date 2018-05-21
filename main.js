@@ -152,7 +152,7 @@ document.getElementById("goButton").addEventListener("click", async () => {
       alert("You need to upload a file, to use an uploaded file.");
       return;
     }
-    logOutput("Using uploaded payload \"" + file + "\"");
+    logOutput("Using uploaded payload \"" + file.name + "\"");
     payload = new Uint8Array(await readFileAsArrayBuffer(file));
   } else {
     logOutput("<span style='color:red'>You're trying to load a payload type that doesn't exist.</span>");
@@ -166,7 +166,7 @@ document.getElementById("goButton").addEventListener("click", async () => {
     for (var i = 0; i < payload.length; i++) {
       payloadToLog += "0x" + payload[i].toString(16) + ", ".toUpperCase();
     }
-    payloadToLog = payloadToLog.toUpperCase();
+    payloadToLog = payloadToLog;
     logOutput(payloadToLog);
     return;
   }
