@@ -20,7 +20,6 @@ function setPageLanguage(lang) {
 
   document.getElementById("pageTitle").innerHTML      = langObj.pageTitle;
   document.getElementById("pageSubtitle").innerHTML   = langObj.pageSubtitle;
-  document.getElementById("dangerUpload").innerHTML   = langObj.dangerUpload;
   document.getElementById("dangerDanger").innerHTML   = langObj.dangerDanger;
   document.getElementById("warningWindows").innerHTML = langObj.warningWindows;
   document.getElementById("warningBrowser").innerHTML = langObj.warningBrowser;
