@@ -133,6 +133,15 @@ document.getElementById("goButton").addEventListener("click", async () => {
   var debugCheckbox = document.getElementById("shouldDebug");
   const payloadType = document.getElementById("payloadSelect").value;
 
+  logOutput("Requesting access to device...");
+  try {
+    device = await navigator.usb.requestDevice({ filters: [{ vendorId: 0x0955 }] });
+  } catch (error) {
+    console.log(error);
+    logOutput("Failed to get a device. Did you chose one?");
+    return;
+  }
+
   let payload;
   if (payloadType === "hekate v5") {
     payload = hekate5;
@@ -157,6 +166,7 @@ document.getElementById("goButton").addEventListener("click", async () => {
     }
     logOutput("Using uploaded payload \"" + file.name + "\"");
     payload = new Uint8Array(await readFileAsArrayBuffer(file));
+    
   } else {
     logOutput("<span style='color:red'>You're trying to load a payload type that doesn't exist.</span>");
     return;
@@ -174,9 +184,6 @@ document.getElementById("goButton").addEventListener("click", async () => {
     return;
   }
 
-  logOutput("Requesting access to device...");
-  device = await navigator.usb.requestDevice({ filters: [{ vendorId: 0x0955 }] });
-  
   logOutput(`<span style='color:blue'>Preparing to launch ${payloadType}...</span>`);
   launchPayload(payload);
 });
