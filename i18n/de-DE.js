@@ -27,5 +27,5 @@ let deDE = {
   "disclaimer1" :'Der Quellcode kann hier gefunden werden: <a href="https://github.com/ElijahZAwesome/web-cfw-loader/">GitHub</a> (oder indem man sich den Quellcode direkt ankuckt, da kein Backend existiert!).',
   "disclaimer2" :'Portiert von <a href="https://github.com/reswitched/fusee-launcher">fusee-launcher</a>.',
   "disclaimer3" :'Danke an ktemkin und ReSwitched, aber auch <br><a href="https://atlas44.s3-us-west-2.amazonaws.com/web-fusee-launcher/index.html">Atlas44 und seine Webseite</a>, als einen Startpunkt für dieses Projekt.',
-  "disclaimer4" :'Zuletzt danke an <a href="https://github.com/falquinho">falquinho</a> für sein Bootstraplayout und Übersetzung in Portugiesisch, <a href="https://github.com/Filo97">Filo97</a> für die italienische Übersetzung und <a href="https://github.com/tumGER"> tumGER </a>für seine deutsche Übersetzung!.'
+  "disclaimer4" :'Zuletzt danke an <a href="https://github.com/falquinho">falquinho</a> für sein Bootstraplayout und Übersetzung in Portugiesisch, <a href="https://github.com/Filo97">Filo97</a> für die italienische Übersetzung, <a href="https://github.com/tumGER"> tumGER </a>für seine deutsche Übersetzung und <a href="https://github.com/lordfriky">Lord_Friky</a> für die spanisch Übersetzung!.'
 }

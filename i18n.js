@@ -5,7 +5,7 @@ function setPageLanguage(lang) {
   if (lang === "en-US")
     langObj = enUS;
 
-  else if (lang === "it-IT") 
+  else if (lang === "it-IT")
     langObj = itIT;
 
   else if (lang === "pt-BR")
@@ -13,10 +13,13 @@ function setPageLanguage(lang) {
 
   else if (lang === "de-DE")
     langObj = deDE;
-  
-  else 
+
+  else if (lang === "es-MX")
+    langObj = esMX;
+
+  else
     langObj = enUS;
-  
+
 
   document.getElementById("pageTitle").innerHTML      = langObj.pageTitle;
   document.getElementById("pageSubtitle").innerHTML   = langObj.pageSubtitle;
