@@ -16,6 +16,9 @@ function setPageLanguage(lang) {
 
   else if (lang === "es-MX")
     langObj = esMX;
+  
+  else if (lang === "fr-FR")
+    langObj = frFR;
 
   else
     langObj = enUS;
