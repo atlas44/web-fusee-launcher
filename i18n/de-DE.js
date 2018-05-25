@@ -1,5 +1,5 @@
 let deDE = {
-  "pageTitle"    : "Nintendo Switch Payload Lader",
+  "pageTitle"    : "Nintendo Switch Payload Loader",
   "pageSubtitle" : "Fusee Launcher portiert zu JavaScript mit der Hilfe von WebUSB.",
   "dangerUpload"   :"Aus irgendeinem Grund funktionieren hochgeladene Payloads nicht. Wir versuchen zurzeit dies zu reparieren.",
   "dangerDanger"   :"Es wurde einigermaßen getestet. Auch wenn bisher keine Fehler gefunden wurden, bin ich nicht schuldig, falls es zu Problemen kommt!",
