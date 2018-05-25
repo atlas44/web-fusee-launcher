@@ -11,4 +11,4 @@ This is also a fork of [web-fusee-launcher](https://github.com/atlas44/web-fusee
 This site uses a payload made by me that instantly boots CFW with hekate. you can find it [here](https://github.com/ElijahZAwesome/hekate-ipl-instant-boot-edition).
 
 # Try it out
-Either use a web server to host the files (must be on https!) or you can try the [demo](https://elijahzawesome.github.io/web-cfw-loader/).
+Either use a web server to host the files (must be on https, because of the fact that WebUSB is new technology and therefore has a lot of security restrictions) or you can try it [on google pages](https://elijahzawesome.github.io/web-cfw-loader/).
