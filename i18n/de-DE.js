@@ -21,7 +21,7 @@ let deDE = {
   "optionHekateV4"  :"Hekate für 4.0.x Switches",
   "optionFusee"     :"(Re)Switched Test Payload (fusee)",
   "optionUpload"    :"Eigenes Payload hochladen",
-  "h4GetByteArray"  :"Erhalte das Payload Byte-Array (nicht senden)",
+  "h4GetByteArray"  :"Erhalte den Payload Byte-Array (nicht senden)",
   "goButton"        :"Sende das Payload!",
   "clearlogsbutton" :"Protokoll leeren",
   "disclaimer1" :'Der Quellcode kann hier gefunden werden: <a href="https://github.com/ElijahZAwesome/web-cfw-loader/">GitHub</a> (oder indem man sich den Quellcode direkt ankuckt, da kein Backend existiert!).',
