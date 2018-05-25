@@ -1,7 +1,7 @@
 let deDE = {
   "pageTitle"    : "Nintendo Switch Payload Lader",
   "pageSubtitle" : "Fusee Launcher portiert zu JavaScript mit der Hilfe von WebUSB.",
-  "dangerUpload"   :"Aus irgendeinem Grund funktionieren hochgeladene Payloads nicht. Ich versuche zurzeit dies zu reparieren.",
+  "dangerUpload"   :"Aus irgendeinem Grund funktionieren hochgeladene Payloads nicht. Wir versuchen zurzeit dies zu reparieren.",
   "dangerDanger"   :"Es wurde einigermaßen getestet. Auch wenn bisher keine Fehler gefunden wurden, bin ich nicht schuldig, falls es zu Problemen kommt!",
   "warningWindows" :"Dies funktioniert nicht auf Windows durch Probleme mit Chrome und WebUSB (und wahrscheinlich anderen Gründen!)",
   "warningBrowser" :"Dies funktioniert bisher mit keinem Browser AUßER Chrome! Das liegt daran, dass die anderen Browser WebUSB nicht supporten!",
@@ -23,7 +23,7 @@ let deDE = {
   "optionUpload"    :"Eigenes Payload hochladen",
   "h4GetByteArray"  :"Erhalte Payload Byte-Array (nicht senden)",
   "goButton"        :"Sende Payload!",
-  "clearlogsbutton" :"Clear Logs",
+  "clearlogsbutton" :"Protokoll leeren",
   "disclaimer1" :'Der Quellcode kann hier gefunden werden: <a href="https://github.com/ElijahZAwesome/web-cfw-loader/">GitHub</a> (oder indem man sich den Quellcode direkt ankuckt, da kein Backend existiert!).',
   "disclaimer2" :'Portiert von <a href="https://github.com/reswitched/fusee-launcher">fusee-launcher</a>.',
   "disclaimer3" :'Danke an ktemkin und ReSwitched, aber auch <br><a href="https://atlas44.s3-us-west-2.amazonaws.com/web-fusee-launcher/index.html">Atlas44 und seine Webseite</a>, als einen Startpunkt für dieses Projekt.',
