@@ -157,6 +157,9 @@ document.getElementById("goButton").addEventListener("click", async () => {
 
   } else if (payloadType === "instabootv4") {
     payload = instabootv4;
+    
+  } else if (payloadType === "CTCaer_Hekate") {
+    payload = CTCaer_Hekate;
 
   } else if (payloadType === "uploaded") {
     const file = document.getElementById("payloadUpload").files[0];
