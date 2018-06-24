@@ -132,6 +132,8 @@ document.getElementById("goButton").addEventListener("click", async () => {
   clearLog();
   var debugCheckbox = document.getElementById("shouldDebug");
   const payloadType = document.getElementById("payloadSelect").value;
+  
+  if(!debugCheckbox.checked) {
 
   logOutput("Requesting access to device...");
   try {
@@ -140,6 +142,7 @@ document.getElementById("goButton").addEventListener("click", async () => {
     console.log(error);
     logOutput("Failed to get a device. Did you chose one?");
     return;
+  }
   }
 
   let payload;
