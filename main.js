@@ -164,6 +164,8 @@ document.getElementById("goButton").addEventListener("click", async () => {
   } else if (payloadType === "CTCaer_Hekate") {
     payload = CTCaer_Hekate;
 
+  } else if (payloadType === "sx os") {
+    payload = sx;
   } else if (payloadType === "uploaded") {
     const file = document.getElementById("payloadUpload").files[0];
     if (!file) {
