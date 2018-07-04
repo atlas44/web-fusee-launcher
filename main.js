@@ -146,24 +146,12 @@ document.getElementById("goButton").addEventListener("click", async () => {
   }
 
   let payload;
-  if (payloadType === "hekate v5") {
-    payload = hekate5;
-
-  } else if (payloadType === "hekate v4") {
-    payload = hekate4;
+  if (payloadType === "CTCaer_Hekate") {
+    payload = CTCaer_Hekate;
 
   } else if (payloadType === "fusee") {
     payload = fusee;
-
-  } else if (payloadType === "instaboot") {
-    payload = instaboot;
-
-  } else if (payloadType === "instabootv4") {
-    payload = instabootv4;
     
-  } else if (payloadType === "CTCaer_Hekate") {
-    payload = CTCaer_Hekate;
-
   } else if (payloadType === "sx os") {
     payload = sx;
   } else if (payloadType === "uploaded") {
