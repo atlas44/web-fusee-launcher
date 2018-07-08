@@ -24,5 +24,5 @@ let esMX = {
   "disclaimer1" :'El código fuente puede ser encontrado en <a href="https://github.com/ElijahZAwesome/web-cfw-loader/">GitHub</a> (o presionando ver código fuente, no hay backend!).',
   "disclaimer2" :'Portado de <a href="https://github.com/reswitched/fusee-launcher">fusee-launcher</a>.',
   "disclaimer3" :'Gracias a ktemkin y ReSwitched, tanto como <br><a href="https://atlas44.s3-us-west-2.amazonaws.com/web-fusee-launcher/index.html">Atlas44 y su sitio web</a> como punto de partida para este.',
-  "disclaimer4" :'Finalmente, gracias a <a href="https://github.com/falquinho">falquinho</a> por el nuevo diseño y la traducción en portugués, <a href="https://github.com/Filo97">Filo97</a> por la traducción en italiano, <a href="https://github.com/tumGER">tumGER</a> por la traducción en alemán, y <a href="https://github.com/lordfriky">Lord_Friky</a> por la traducción en español.'
+  "disclaimer4" :'Finalmente, gracias a <a href="https://github.com/falquinho">falquinho</a> por el nuevo diseño y la traducción en portugués, <a href="https://github.com/thomleg50">thomleg50</a> por la traducción en francés, <a href="https://github.com/Filo97">Filo97</a> por la traducción en italiano, <a href="https://github.com/tumGER">tumGER</a> por la traducción en alemán, y <a href="https://github.com/lordfriky">Lord_Friky</a> por la traducción en español.'
 }
