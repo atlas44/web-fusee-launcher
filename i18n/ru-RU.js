@@ -14,7 +14,7 @@ let ruRU = {
   "liLaunch"       :"Если всё идёт по плану, пейлоад запустится на приставке!",
   "h1SetupDelivery" :"Настройки отправки пейлоада",
   "h4SelectPayload" :"Выберите пейлоад:",
-  "optionCTCaerHekate" :"CTCaer's Hekate Mod v3.0 (All Firmwares)",
+  "optionCTCaerHekate" :"CTCaer's Hekate Mod v3.2 (All Firmwares)",
   "optionFusee"     :"Тестовый пейлоад от (Re)Switched",
   "optionSXOS"      :"SX OS (All Firmwares)",
   "optionUpload"    :"Загрузить свой пейлоад",
