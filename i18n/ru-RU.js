@@ -21,6 +21,7 @@ let enUS = {
   "optionHekateV4"  :"Hekate для приставок на 4.0.x",
   "optionFusee"     :"Тестовый пейлоад от (Re)Switched",
   "optionUpload"    :"Загрузить свой пейлоад",
+  "h3Log"           :"Log:",
   "h4GetByteArray"  :"Получить побайтовый вывод листинга пейлоада в лог (без отправки на консоль)",
   "goButton"        :"Отправить пейлоад!",
   "clearlogsbutton" :"Очистить лог",

@@ -47,6 +47,7 @@ function setPageLanguage(lang) {
   document.getElementById("optionSXOS").innerHTML      = langObj.optionSXOS;
   document.getElementById("optionUpload").innerHTML    = langObj.optionUpload;
   document.getElementById("h4GetByteArray").innerHTML  = langObj.h4GetByteArray;
+  document.getElementById("h3Log").innerHTML           = langObj.h3Log;
   document.getElementById("goButton").innerHTML        = langObj.goButton;
   document.getElementById("clearlogsbutton").innerHTML = langObj.clearlogsbutton;
   document.getElementById("disclaimer1").innerHTML = langObj.disclaimer1;
