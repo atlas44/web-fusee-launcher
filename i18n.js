@@ -16,10 +16,10 @@ function setPageLanguage(lang) {
 
   else if (lang === "es-MX")
     langObj = esMX;
-  
+
   else if (lang === "fr-FR")
     langObj = frFR;
-  
+
   else if (lang === "pl-PL")
     langObj = plPL;
 
@@ -42,11 +42,9 @@ function setPageLanguage(lang) {
   document.getElementById("liLaunch").innerHTML       = langObj.liLaunch;
   document.getElementById("h1SetupDelivery").innerHTML = langObj.h1SetupDelivery;
   document.getElementById("h4SelectPayload").innerHTML = langObj.h4SelectPayload;
-  document.getElementById("optionInstantV5").innerHTML = langObj.optionInstantV5;
-  document.getElementById("optionInstantV4").innerHTML = langObj.optionInstantV4;
-  document.getElementById("optionHekateV5").innerHTML  = langObj.optionHekateV5;
-  document.getElementById("optionHekateV4").innerHTML  = langObj.optionHekateV4;
+  document.getElementById("optionCTCaerHekate").innerHTML  = langObj.optionCTCaerHekate;
   document.getElementById("optionFusee").innerHTML     = langObj.optionFusee;
+  document.getElementById("optionSXOS").innerHTML      = langObj.optionSXOS;
   document.getElementById("optionUpload").innerHTML    = langObj.optionUpload;
   document.getElementById("h4GetByteArray").innerHTML  = langObj.h4GetByteArray;
   document.getElementById("goButton").innerHTML        = langObj.goButton;
