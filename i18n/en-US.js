@@ -14,7 +14,7 @@ let enUS = {
   "liLaunch"       :"If all goes well, the payload will launch!",
   "h1SetupDelivery" :"Setup Payload Delivery",
   "h4SelectPayload" :"Select Payload:",
-  "optionCTCaerHekate" :"CTCaer's Hekate Mod v3.0 (All Firmwares)",
+  "optionCTCaerHekate" :"CTCaer's Hekate Mod v3.2 (All Firmwares)",
   "optionFusee"     :"(Re)Switched test payload (fusee)",
   "optionSXOS"      :"SX OS (All Firmwares)",
   "optionUpload"    :"Upload Payload",

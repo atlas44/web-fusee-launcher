@@ -14,7 +14,7 @@ let ptBR = {
   "liLaunch"       :"Se tudo der certo, o payload executará!",
   "h1SetupDelivery" :"Configurar Entrega de Payload",
   "h4SelectPayload" :"Payload:",
-  "optionCTCaerHekate" :"CTCaer's Hekate Mod v3.0 (All Firmwares)",
+  "optionCTCaerHekate" :"CTCaer's Hekate Mod v3.2 (All Firmwares)",
   "optionFusee"     :"Payload de teste (Re)Switched (fusee)",
   "optionSXOS"      :"SX OS (All Firmwares)",
   "optionUpload"    :"Carregar Payload",

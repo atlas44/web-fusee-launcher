@@ -15,7 +15,7 @@ let plPL = {
   "liLaunch"       :"Jeżeli się udało, to payload zostanie uruchomiony!",
   "h1SetupDelivery" :"Wybierz konfigurację payloadu",
   "h4SelectPayload" :"Wybierz Payload",
-  "optionCTCaerHekate" :"CTCaer's Hekate Mod v3.0 (All Firmwares)",
+  "optionCTCaerHekate" :"CTCaer's Hekate Mod v3.2 (All Firmwares)",
   "optionFusee"     :"(Re)Switched testowy payload (fusee)",
   "optionSXOS"      :"SX OS (All Firmwares)",
   "optionUpload"    :"Załaduj payload",
