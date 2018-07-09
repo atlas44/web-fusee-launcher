@@ -23,6 +23,9 @@ function setPageLanguage(lang) {
   else if (lang === "pl-PL")
     langObj = plPL;
 
+  else if (lang === "ru-RU")
+    langObj = ruRU;
+
   else
     langObj = enUS;
 

@@ -1,7 +1,6 @@
-let enUS = {
+let ruRU = {
   "pageTitle"    : "Загрузчик пейлоадов для Nintendo Switch",
   "pageSubtitle" : "Fusee Launcher портирован на JavaScript с использованием WebUSB.",
-  "dangerUpload"   :"Почему-то загруженные пейлоады не работают. Я как раз пытаюсь это исправить.",
   "dangerDanger"   :"Всё, в общем-то, оттестировано. Никаких проблем не обнаружено. Но я не несу никакой ответственности, если что-то вдруг пойдёт не так!",
   "warningWindows" :"На Windows ничего не будет работать! Всё из-за ограничений в реализации в виндовом хроме WebUSB (и, возможно, из-за чего-то ещё)",
   "warningBrowser" :"Работает только в браузере Chrome! Другие браузеры не поддерживают WebUSB.",
@@ -15,11 +14,9 @@ let enUS = {
   "liLaunch"       :"Если всё идёт по плану, пейлоад запустится на приставке!",
   "h1SetupDelivery" :"Настройки отправки пейлоада",
   "h4SelectPayload" :"Выберите пейлоад:",
-  "optionInstantV5" :"Прямая загрузка в CFW (5.0.x)",
-  "optionInstantV4" :"Прямая загрузка в CFW (4.0.x)",
-  "optionHekateV5"  :"Hekate для приставок на 5.0.x",
-  "optionHekateV4"  :"Hekate для приставок на 4.0.x",
+  "optionCTCaerHekate" :"CTCaer's Hekate Mod v3.0 (All Firmwares)",
   "optionFusee"     :"Тестовый пейлоад от (Re)Switched",
+  "optionSXOS"      :"SX OS (All Firmwares)",
   "optionUpload"    :"Загрузить свой пейлоад",
   "h4GetByteArray"  :"Получить побайтовый вывод листинга пейлоада в лог (без отправки на консоль)",
   "goButton"        :"Отправить пейлоад!",
