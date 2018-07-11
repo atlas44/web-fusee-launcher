@@ -29,6 +29,9 @@ function setPageLanguage(lang) {
   else if (lang === "zh-TW")
     langObj = zhTW;
 
+  else if (lang === "ru-RU")
+    langObj = ruRU;
+
   else
     langObj = enUS;
 
