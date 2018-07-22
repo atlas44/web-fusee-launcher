@@ -87,7 +87,9 @@
           <li id="liLaunch">If all goes well, the payload will launch!</li>
         </ul>
       </div>
-
+      <div class="alert alert-info" role="alert">
+        <p id="labelAddPayload">If you would like to add another payload to this project, use <a href="https://gist.github.com/lorek123/561e4f7b5f61618029cc70672e3d7308">this converter</a> and do PR</p>
+      </div>
     </div>
   </div>
 
@@ -102,11 +104,12 @@
             </div>
 
             <div class="col-xs-6">
-              <select class="pull-right"    id="payloadSelect" onchange="onSelectChange()">
-                <option value="CTCaer_Hekate" id="optionHekateV4" >CTCaer's Hekate Mod v3.0 (All Firmwares)</option>
-                <option value="fusee"       id="optionFusee"    >(Re)Switched test payload (fusee)</option>
-                <option value="sx os"       id="optionSXOS"    >SX OS (All Firmwares)</option>
-                <option value="uploaded"    id="optionUpload"   >Upload payload</option>
+              <select class="pull-right"  id="payloadSelect" onchange="onSelectChange()">
+                <option value="CTCaer_Hekate" id="optionHekate" >CTCaer's Hekate Mod v3.2 (All Firmwares)</option>
+                <option value="fusee" id="optionFusee"  >(Re)Switched test payload (fusee)</option>
+                <option value="sx os" id="optionSXOS" >SX OS (All Firmwares)</option>
+                <option value="briccmii"  id="optionBriccmii" >briccmii</option>
+                <option value="uploaded"  id="optionUpload" >Upload payload</option>
               </select>
             </div>
           </div>

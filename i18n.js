@@ -35,6 +35,7 @@ function setPageLanguage(lang) {
   document.getElementById("warningLinux").innerHTML   = langObj.warningLinux;
   document.getElementById("warningTested").innerHTML  = langObj.warningTested;
   document.getElementById("labelInstructions").innerHTML = langObj.labelInstructions;
+  if (langObj.labelAddPayload != null) document.getElementById("labelAddPayload").innerHTML = langObj.labelAddPayload;
   document.getElementById("liRCM").innerHTML          = langObj.liRCM;
   document.getElementById("liSelect").innerHTML       = langObj.liSelect;
   document.getElementById("liPress").innerHTML        = langObj.liPress;
@@ -42,11 +43,9 @@ function setPageLanguage(lang) {
   document.getElementById("liLaunch").innerHTML       = langObj.liLaunch;
   document.getElementById("h1SetupDelivery").innerHTML = langObj.h1SetupDelivery;
   document.getElementById("h4SelectPayload").innerHTML = langObj.h4SelectPayload;
-  document.getElementById("optionInstantV5").innerHTML = langObj.optionInstantV5;
-  document.getElementById("optionInstantV4").innerHTML = langObj.optionInstantV4;
-  document.getElementById("optionHekateV5").innerHTML  = langObj.optionHekateV5;
-  document.getElementById("optionHekateV4").innerHTML  = langObj.optionHekateV4;
+  document.getElementById("optionHekate").innerHTML  = langObj.optionHekate;
   document.getElementById("optionFusee").innerHTML     = langObj.optionFusee;
+  document.getElementById("optionBriccmii").innerHTML     = langObj.optionBriccmii;
   document.getElementById("optionUpload").innerHTML    = langObj.optionUpload;
   document.getElementById("h4GetByteArray").innerHTML  = langObj.h4GetByteArray;
   document.getElementById("goButton").innerHTML        = langObj.goButton;

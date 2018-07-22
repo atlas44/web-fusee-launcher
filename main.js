@@ -154,7 +154,10 @@ document.getElementById("goButton").addEventListener("click", async () => {
     
   } else if (payloadType === "sx os") {
     payload = sx;
-  } else if (payloadType === "uploaded") {
+  } else if (payloadType === "briccmii") {
+    payload = briccmii;
+  }
+   else if (payloadType === "uploaded") {
     const file = document.getElementById("payloadUpload").files[0];
     if (!file) {
       alert("You need to upload a file, to use an uploaded file.");
@@ -206,5 +209,11 @@ function openInfo() {
 function openInstructions() {
   if(document.getElementById("infodiv").innerHTML != "") {
     document.getElementById("infodiv").innerHTML = "";
+  }
+}
+
+function openConverter() {
+  if(document.getElementById("labelAddPayload").innerHTML != "") {
+    document.getElementById("labelAddPayload").innerHTML = "";
   }
 }
