@@ -1,7 +1,6 @@
 let ptBR = {
   "pageTitle"    : "Nintendo Switch Payload Loader",
   "pageSubtitle" : "Fusee Launcher portado para JavaScript usando WebUSB.",
-  "dangerUpload"   :"Por algum motivo payloads carregados não funcionam. Estou tentando corrigir esse erro.",
   "dangerDanger"   :"Esta ferramenta não foi completamente testada. Apesar de não ter encontrado nenhuma falha, não me responsabilizo se algo der errado!",
   "warningWindows" :"Isto NÃO funciona no Windows devido uma limitação do Chrome na implementação do WebUSB (e, possivelmente, outros motivos).",
   "warningBrowser" :"Isto NÃO funciona, atualmente, em nenhum browser além do Chrome, que é o único a implementar WebUSB.",
@@ -15,14 +14,16 @@ let ptBR = {
   "liLaunch"       :"Se tudo der certo, o payload executará!",
   "h1SetupDelivery" :"Configurar Entrega de Payload",
   "h4SelectPayload" :"Payload:",
-  "optionHekate"  :"CTCaer's Hekate Mod v3.2",
+  "optionCTCaerHekate" :"CTCaer's Hekate Mod v3.2 (All Firmwares)",
   "optionFusee"     :"Payload de teste (Re)Switched (fusee)",
+  "optionSXOS"      :"SX OS (All Firmwares)",
   "optionUpload"    :"Carregar Payload",
+  "h3Log"           :"Log:",
   "h4GetByteArray"  :"Recuperar array de bytes do payload (favor não exploitar)",
   "goButton"        :"Enviar Payload!",
   "clearlogsbutton" :"Limpar Logs",
   "disclaimer1" :'Código fonte disponível em <a href="https://github.com/ElijahZAwesome/web-cfw-loader/">GitHub</a> (ou simplesmente clicando "ver código", não há backend).',
   "disclaimer2" :'Um port do <a href="https://github.com/reswitched/fusee-launcher">fusee-launcher</a>.',
   "disclaimer3" :'Muito obrigado a Ktemkin e time (Re)Switched, bem como <br><a href="https://atlas44.s3-us-west-2.amazonaws.com/web-fusee-launcher/index.html">Atlas44 e seu website</a> que é a base deste.',
-  "disclaimer4" :'Por último, obrigado <a href="https://github.com/falquinho">falquinho</a> pelo novo layout Bootstrap e tradução para português, <a href="https://github.com/Filo97">Filo97</a> pela tradução para italiano, <a href="https://github.com/tumGER">tumGER</a> pela tradução para alemão, e <a href="https://github.com/lordfriky">Lord_Friky</a> pela tradução para espanhol.'
+  "disclaimer4" :'Por último, obrigado <a href="https://github.com/falquinho">falquinho</a> pelo novo layout Bootstrap e tradução para português, <a href="https://github.com/thomleg50">thomleg50</a> pela tradução para francês, <a href="https://github.com/Filo97">Filo97</a> pela tradução para italiano, <a href="https://github.com/tumGER">tumGER</a> pela tradução para alemão, <a href="https://github.com/lordfriky">Lord_Friky</a> pela tradução para espanhol, e <a href="https://github.com/lorek123">Lorek</a> pela tradução para polonês.'
 }

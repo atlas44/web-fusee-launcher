@@ -22,6 +22,15 @@ function setPageLanguage(lang) {
   
   else if (lang === "pl-PL")
     langObj = plPL;
+  
+  else if (lang === "zh-CN")
+    langObj = zhCN;
+  
+  else if (lang === "zh-TW")
+    langObj = zhTW;
+
+  else if (lang === "ru-RU")
+    langObj = ruRU;
 
   else
     langObj = enUS;
@@ -43,11 +52,12 @@ function setPageLanguage(lang) {
   document.getElementById("liLaunch").innerHTML       = langObj.liLaunch;
   document.getElementById("h1SetupDelivery").innerHTML = langObj.h1SetupDelivery;
   document.getElementById("h4SelectPayload").innerHTML = langObj.h4SelectPayload;
-  document.getElementById("optionHekate").innerHTML  = langObj.optionHekate;
+  document.getElementById("optionCTCaerHekate").innerHTML  = langObj.optionCTCaerHekate;
   document.getElementById("optionFusee").innerHTML     = langObj.optionFusee;
-  document.getElementById("optionBriccmii").innerHTML     = langObj.optionBriccmii;
+  document.getElementById("optionSXOS").innerHTML      = langObj.optionSXOS;
   document.getElementById("optionUpload").innerHTML    = langObj.optionUpload;
   document.getElementById("h4GetByteArray").innerHTML  = langObj.h4GetByteArray;
+  document.getElementById("h3Log").innerHTML           = langObj.h3Log;
   document.getElementById("goButton").innerHTML        = langObj.goButton;
   document.getElementById("clearlogsbutton").innerHTML = langObj.clearlogsbutton;
   document.getElementById("disclaimer1").innerHTML = langObj.disclaimer1;
