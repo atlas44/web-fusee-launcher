@@ -211,9 +211,3 @@ function openInstructions() {
     document.getElementById("infodiv").innerHTML = "";
   }
 }
-
-function openConverter() {
-  if(document.getElementById("labelAddPayload").innerHTML != "") {
-    document.getElementById("labelAddPayload").innerHTML = "";
-  }
-}
