@@ -15,14 +15,16 @@ let frFR = {
   "liLaunch"       :"Si tout est bon le Payload va démarrer!",
   "h1SetupDelivery" :"Configuration envoi Payloads",
   "h4SelectPayload" :"Selectionner Payload:",
-  "optionHekate" :"CTCaer's Hekate Mod v3.2",
+  "optionCTCaerHekate" :"CTCaer's Hekate Mod v3.2 (All Firmwares)",
   "optionFusee"     :"(Re)Switched test payload (fusee)",
+  "optionSXOS"      :"SX OS (All Firmwares)",
   "optionUpload"    :"Upload Payload",
+  "h3Log"           :"Log:",
   "h4GetByteArray"  :"Get payload byte array (don't sploit)",
   "goButton"        :"Chargez le Payload!",
   "clearlogsbutton" :"supprimer Logs",
   "disclaimer1" :'Les sources sont disponibles à <a href="https://github.com/ElijahZAwesome/web-cfw-loader/">GitHub</a> (ou en cliquant sur la source, il n\'y a pas de backend!).',
   "disclaimer2" :'Porter de <a href="https://github.com/reswitched/fusee-launcher">fusee-launcher</a>.',
   "disclaimer3" :'Merci à ktemkin et ReSwitched, aussi à <br><a href="https://atlas44.s3-us-west-2.amazonaws.com/web-fusee-launcher/index.html">Atlas44 et son site</a> un bon point de démarrage pur moi.',
-  "disclaimer4" :'Lastly, thanks to <a href="https://github.com/falquinho">falquinho</a> for the new bootstrap layout and portuguese translation, <a href="https://github.com/Filo97">Filo97</a> for the italian translation, <a href="https://github.com/tumGER">tumGER</a> for his german translation, and <a href="https://github.com/lordfriky">Lord_Friky</a> for the spanish translation.'
+  "disclaimer4" :'Lastly, thanks to <a href="https://github.com/falquinho">falquinho</a> for the new bootstrap layout and portuguese translation, <a href="https://github.com/thomleg50">thomleg50</a> for the french translation, <a href="https://github.com/Filo97">Filo97</a> for the italian translation, <a href="https://github.com/tumGER">tumGER</a> for his german translation, <a href="https://github.com/lordfriky">Lord_Friky</a> for the spanish translation, and <a href="https://github.com/lorek123">Lorek</a> for the polish translation.'
 }

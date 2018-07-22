@@ -15,14 +15,16 @@ let itIT = {
   "liLaunch"       :"Se tutto funziona il payload si avvierà!",
   "h1SetupDelivery" :"Setup Payload Delivery",
   "h4SelectPayload" :"Select Payload:",
-  "optionHekate"  :"CTCaer's Hekate Mod v3.2",
+  "optionCTCaerHekate" :"CTCaer's Hekate Mod v3.2 (All Firmwares)",
   "optionFusee"     :"(Re)Switched payload di test (fusee)",
+  "optionSXOS"      :"SX OS (All Firmwares)",
   "optionUpload"    :"Carica payload",
+  "h3Log"           :"Log:",
   "h4GetByteArray"  :"Ottieni byte array del payload (no exploit)",
   "goButton"        :"Avvia Payload!",
   "clearlogsbutton" :"Pulisci Logs",
   "disclaimer1" :'Il source puo essere trovato a <a href="https://github.com/ElijahZAwesome/web-cfw-loader/">GitHub</a> (o premendo guarda source, ma non c\'è backend!).',
   "disclaimer2" :'Portato da <a href="https://github.com/reswitched/fusee-launcher">fusee-launcher</a>.',
   "disclaimer3" :'Grazie tante a ktemkin e ReSwitched, e non dimentichiamoci <br><a href="https://atlas44.s3-us-west-2.amazonaws.com/web-fusee-launcher/index.html">Atlas44 e il suo sito</a> come punto di inizio per questo.',
-  "disclaimer4" :'Lastly, thanks to <a href="https://github.com/falquinho">falquinho</a> for the new bootstrap layout and portuguese translation, <a href="https://github.com/Filo97">Filo97</a> for the italian translation, <a href="https://github.com/tumGER">tumGER</a> for his german translation, and <a href="https://github.com/lordfriky">Lord_Friky</a> for the spanish translation.'
+  "disclaimer4" :'Lastly, thanks to <a href="https://github.com/falquinho">falquinho</a> for the new bootstrap layout and portuguese translation, <a href="https://github.com/thomleg50">thomleg50</a> for the french translation, <a href="https://github.com/Filo97">Filo97</a> for the italian translation, <a href="https://github.com/tumGER">tumGER</a> for his german translation, <a href="https://github.com/lordfriky">Lord_Friky</a> for the spanish translation, and <a href="https://github.com/lorek123">Lorek</a> for the polish translation.'
 }
