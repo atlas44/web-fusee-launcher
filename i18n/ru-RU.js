@@ -17,6 +17,7 @@ let ruRU = {
   "optionCTCaerHekate" :"CTCaer's Hekate Mod v3.2 (All Firmwares)",
   "optionFusee"     :"Тестовый пейлоад от (Re)Switched",
   "optionSXOS"      :"SX OS (All Firmwares)",
+  "optionReiNX"     :"ReiNX (With SigPatches)",
   "optionUpload"    :"Загрузить свой пейлоад",
   "h3Log"           :"Log:",
   "h4GetByteArray"  :"Получить побайтовый вывод листинга пейлоада в лог (без отправки на консоль)",
