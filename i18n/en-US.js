@@ -17,6 +17,7 @@ let enUS = {
   "optionCTCaerHekate" :"CTCaer's Hekate Mod v3.2 (All Firmwares)",
   "optionFusee"     :"(Re)Switched test payload (fusee)",
   "optionSXOS"      :"SX OS (All Firmwares)",
+  "optionReiNX"     :"ReiNX (With SigPatches)",
   "optionUpload"    :"Upload Payload",
   "h3Log"           :"Log:",
   "h4GetByteArray"  :"Get payload byte array (don't sploit)",

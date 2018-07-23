@@ -17,6 +17,7 @@ let deDE = {
   "optionCTCaerHekate" :"CTCaer's Hekate Mod v3.2 (Alle Firmwares)",
   "optionFusee"     :"(Re)Switched Test Payload (fusee)",
   "optionSXOS"      :"SX OS (Alle Firmwares)",
+  "optionReiNX"     :"ReiNX (With SigPatches)",
   "optionUpload"    :"Eigenes Payload hochladen",
   "h3Log"           :"Protokoll:",
   "h4GetByteArray"  :"Erhalte das Payload Byte-Array (nicht senden)",

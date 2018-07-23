@@ -17,6 +17,7 @@ let ptBR = {
   "optionCTCaerHekate" :"CTCaer's Hekate Mod v3.2 (All Firmwares)",
   "optionFusee"     :"Payload de teste (Re)Switched (fusee)",
   "optionSXOS"      :"SX OS (All Firmwares)",
+  "optionReiNX"     :"ReiNX (With SigPatches)",
   "optionUpload"    :"Carregar Payload",
   "h3Log"           :"Log:",
   "h4GetByteArray"  :"Recuperar array de bytes do payload (favor não exploitar)",

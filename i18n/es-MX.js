@@ -17,6 +17,7 @@ let esMX = {
   "optionCTCaerHekate" :"Mod de Hekate de CTCaer v3.2 (Todos los Firmwares)",
   "optionFusee"     :"Payload de prueba de (Re)Switched (fusee)",
   "optionSXOS"      :"SX OS (Todos los Firmwares)",
+  "optionReiNX"     :"ReiNX (With SigPatches)",
   "optionUpload"    :"Subir Payload",
   "h3Log"           :"Log:",
   "h4GetByteArray"  :"Obtener matriz de bytes del payload (sin exploit)",
