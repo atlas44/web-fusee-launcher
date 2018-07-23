@@ -19,6 +19,7 @@ let plPL = {
   "optionCTCaerHekate" :"CTCaer's Hekate Mod v3.2 (All Firmwares)",
   "optionFusee"     :"(Re)Switched testowy payload (fusee)",
   "optionSXOS"      :"SX OS (All Firmwares)",
+  "optionReiNX"     :"ReiNX (With SigPatches)",
   "optionUpload"    :"Załaduj payload",
   "h3Log"           :"Log:",
   "h4GetByteArray"  :"Uzyskaj ciąg bajtów payloadu (nie uruchamiaj)",

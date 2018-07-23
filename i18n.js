@@ -22,10 +22,10 @@ function setPageLanguage(lang) {
   
   else if (lang === "pl-PL")
     langObj = plPL;
-  
+
   else if (lang === "zh-CN")
     langObj = zhCN;
-  
+
   else if (lang === "zh-TW")
     langObj = zhTW;
 
@@ -55,6 +55,7 @@ function setPageLanguage(lang) {
   document.getElementById("optionCTCaerHekate").innerHTML  = langObj.optionCTCaerHekate;
   document.getElementById("optionFusee").innerHTML     = langObj.optionFusee;
   document.getElementById("optionSXOS").innerHTML      = langObj.optionSXOS;
+  document.getElementById("optionReiNX").innerHTML      = langObj.optionReiNX;
   document.getElementById("optionUpload").innerHTML    = langObj.optionUpload;
   document.getElementById("h4GetByteArray").innerHTML  = langObj.h4GetByteArray;
   document.getElementById("h3Log").innerHTML           = langObj.h3Log;
