@@ -1,7 +1,6 @@
 let zhCN = {
   "pageTitle"    : "任天堂 Switch Payload 网页加载器",
   "pageSubtitle" : "Fusee Launcher利用WebUSB移植在JavaScript上",
-  "dangerUpload"   :"由于不可抗拒的原因，上传的Payload不起作用，目前我现在正在解决这个问题",
   "dangerDanger"   :"这是实验性的测试项目，目前虽然没有发现任何问题，但如果有任何问题发生，我不负责!",
   "warningWindows" :"由于WebUSB在Chrome上功能受到限制(可能还有其他原因)，暂不支持Windows系统。",
   "warningBrowser" :"除了Chrome浏览器外，其余浏览器无法使用WebUSB",
@@ -15,7 +14,7 @@ let zhCN = {
   "liLaunch"       :"如果一切顺利，Payload将成功加载!",
   "h1SetupDelivery" :"部署 Payload",
   "h4SelectPayload" :"选择 Payload:",
-  "optionCTCaerHekate"  :"CTCaer's Hekate Mod v3.0 (全版本)",
+  "optionCTCaerHekate"  :"CTCaer's Hekate Mod v3.2 (全版本)",
   "optionFusee"     :"(Re)Switched test payload (fusee)",
   "optionSXOS"      :"SX OS (全版本)",
   "optionReiNX"     :"ReiNX (With SigPatches)",

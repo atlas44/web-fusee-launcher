@@ -16,10 +16,10 @@ function setPageLanguage(lang) {
 
   else if (lang === "es-MX")
     langObj = esMX;
-
+  
   else if (lang === "fr-FR")
     langObj = frFR;
-
+  
   else if (lang === "pl-PL")
     langObj = plPL;
 
@@ -44,6 +44,7 @@ function setPageLanguage(lang) {
   document.getElementById("warningLinux").innerHTML   = langObj.warningLinux;
   document.getElementById("warningTested").innerHTML  = langObj.warningTested;
   document.getElementById("labelInstructions").innerHTML = langObj.labelInstructions;
+  if (langObj.labelAddPayload != null) document.getElementById("labelAddPayload").innerHTML = langObj.labelAddPayload;
   document.getElementById("liRCM").innerHTML          = langObj.liRCM;
   document.getElementById("liSelect").innerHTML       = langObj.liSelect;
   document.getElementById("liPress").innerHTML        = langObj.liPress;

@@ -158,6 +158,9 @@ document.getElementById("goButton").addEventListener("click", async () => {
   } else if (payloadType === "ReiNX") {
     payload = ReiNX;
 
+  } else if (payloadType === "briccmii") {
+    payload = briccmii;
+
   } else if (payloadType === "uploaded") {
     const file = document.getElementById("payloadUpload").files[0];
     if (!file) {
