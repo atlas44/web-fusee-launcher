@@ -16,7 +16,7 @@ let plPL = {
   "labelAddPayload" :'Jeżeli chciałbyś dodać swój payload do projektu to możesz skorzystać z <a href="https://gist.github.com/lorek123/561e4f7b5f61618029cc70672e3d7308">tego konwertera</a> i wysłać PR.',
   "h1SetupDelivery" :"Wybierz konfigurację payloadu",
   "h4SelectPayload" :"Wybierz Payload",
-  "optionCTCaerHekate" :"CTCaer's Hekate Mod v3.2 (All Firmwares)",
+  "optionCTCaerHekate" :"CTCaer's Hekate Mod v4.2 (All Firmwares)",
   "optionFusee"     :"(Re)Switched testowy payload (fusee)",
   "optionSXOS"      :"SX OS (All Firmwares)",
   "optionReiNX"     :"ReiNX (With SigPatches)",

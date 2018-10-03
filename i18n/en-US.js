@@ -15,7 +15,7 @@ let enUS = {
   "labelAddPayload":"If you would like to add another payload to this project, use <a href='https://gist.github.com/lorek123/561e4f7b5f61618029cc70672e3d7308'>this converter</a> and do PR",
   "h1SetupDelivery" :"Setup Payload Delivery",
   "h4SelectPayload" :"Select Payload:",
-  "optionCTCaerHekate" :"CTCaer's Hekate Mod v3.2 (All Firmwares)",
+  "optionCTCaerHekate" :"CTCaer's Hekate Mod v4.2 (All Firmwares)",
   "optionFusee"     :"(Re)Switched test payload (fusee)",
   "optionSXOS"      :"SX OS (All Firmwares)",
   "optionReiNX"     :"ReiNX (With SigPatches)",

@@ -14,7 +14,7 @@ let esMX = {
   "liLaunch"       :"Si todo va bien, el payload arrancará!",
   "h1SetupDelivery" :"Configurar Payload a Enviar",
   "h4SelectPayload" :"Seleccionar Payload:",
-  "optionCTCaerHekate" :"Mod de Hekate de CTCaer v3.2 (Todos los Firmwares)",
+  "optionCTCaerHekate" :"Mod de Hekate de CTCaer v4.2 (Todos los Firmwares)",
   "optionFusee"     :"Payload de prueba de (Re)Switched (fusee)",
   "optionSXOS"      :"SX OS (Todos los Firmwares)",
   "optionReiNX"     :"ReiNX (Con Parche de Firmas)",
