@@ -14,7 +14,7 @@ let deDE = {
   "liLaunch"       :"Falls alles richtig läuft, sollte das Payload gesendet sein!",
   "h1SetupDelivery" :"Konfiguration des Payloadversandes",
   "h4SelectPayload" :"Wähle ein Payload:",
-  "optionCTCaerHekate" :"CTCaer's Hekate Mod v3.2 (Alle Firmwares)",
+  "optionCTCaerHekate" :"CTCaer's Hekate Mod v4.2 (Alle Firmwares)",
   "optionFusee"     :"(Re)Switched Test Payload (fusee)",
   "optionSXOS"      :"SX OS (Alle Firmwares)",
   "optionReiNX"     :"ReiNX (With SigPatches)",

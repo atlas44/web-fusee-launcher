@@ -14,7 +14,7 @@ let zhTW = {
   "liLaunch"       :"如果壹切順利，Payload將成功加載!",
   "h1SetupDelivery" :"部署 Payload",
   "h4SelectPayload" :"選擇 Payload:",
-  "optionCTCaerHekate"  :"CTCaer's Hekate Mod v3.2 (全版本)",
+  "optionCTCaerHekate"  :"CTCaer's Hekate Mod v4.2 (全版本)",
   "optionFusee"     :"(Re)Switched test payload (fusee)",
   "optionSXOS"      :"SX OS (全版本)",
   "optionReiNX"     :"ReiNX (With SigPatches)",
