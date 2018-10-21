@@ -147,7 +147,15 @@ document.getElementById("goButton").addEventListener("click", async () => {
 
   let payload;
   if (payloadType === "CTCaer_Hekate") {
-    payload = CTCaer_Hekate;
+var xhr = new XMLHttpRequest(); 
+xhr.open("GET", "https://github.com/ElijahZAwesome/web-cfw-loader/raw/master/hekate_ctcaer_4.2.bin"); 
+xhr.responseType = "blob";//force the HTTP response, response-type header to be blob
+xhr.onload = function() 
+{
+    payload = xhr.response;//xhr.response is now a blob object
+}
+xhr.send();
+    //payload = CTCaer_Hekate;
 
   } else if (payloadType === "fusee") {
     payload = fusee;
