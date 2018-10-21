@@ -163,6 +163,7 @@ document.getElementById("goButton").addEventListener("click", async () => {
 
   } else if (payloadType === "uploaded") {
     const file = document.getElementById("payloadUpload").files[0];
+    console.log(document.getElementById("payloadUpload").files[0]);
     if (!file) {
       alert("You need to upload a file, to use an uploaded file.");
       return;
