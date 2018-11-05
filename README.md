@@ -1,3 +1,5 @@
+# This repo is no longer being updated. I wish I could, but WebUSB is not going to be supported by most other browsers than Chrome due to its inability to be secured, and there is no way to write to a USB drive (and by extension a SD Card) so you can't write a script to load SDFiles quickly. Feel free to make pull requests, I may commit them, but I officially won't be trying to update this anymore. If you look at the code, I attempted to add the ability to download the latest payload from github and load it, but I failed. If you can get that working, I will accept that pull req
+
 # web-cfw-loader
 Fusee Launcher, in a browser!
 
