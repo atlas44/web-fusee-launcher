@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@media only screen and (max-device-width: 768px) {
+  #title h1 {
+    font-size: 5vw;
+  }
+
+  #pageBody, #mainForm h4, #goButton, #clearlogsbutton, .btn-group a, #title h4 {
+    font-size: 3vw;
+  }
+
+  #shouldDebug {
+    width: 4vw;
+    height: 4vw;
+  }
+}
+
+body {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#title {
+  text-align: center;
+  font-size: 1.5vw;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  background-size: cover;
+  background-color: black;
+  background-image: url("background-image.jpg");
+  color: white;
+  margin-top: 0px;
+  top: 0px;
+}
+
+#uploadContainer {
+  margin-bottom: 8px;
+}
+
+#output {
+  height: 200px;
+  border: 1px solid black;
+  overflow: scroll;
+}
+
+#page-footer {
+  padding: 32px;
+  background: #222528;
+  color:      whitesmoke;
+}
+
+#disclaimer {
+  text-align: center;
+}
+
+.divider-line {
+  border-bottom: 1px solid gainsboro;
+}
+
+.margin-top-md {
+  margin-top: 24px;
+}
