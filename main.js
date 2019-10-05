@@ -78,6 +78,7 @@ async function launchPayload(payload) {
   await device.open();
   logOutput(`Connected to ${device.manufacturerName} ${device.productName}`);
 
+  try { await device.selectConfiguration(1); } catch(e) {}
   await device.claimInterface(0);
 
   const deviceID = await device.transferIn(1, 16);
